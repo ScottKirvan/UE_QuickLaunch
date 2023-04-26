@@ -13,7 +13,7 @@
 - [ ] ueql - windows only
 - [ ] Ueql - add icon
 - [ ] Ueql - add a link to reg file docs from microsoft
-- [ ] 
+- [ ] use at your own risk
 ---
 
 <!--
