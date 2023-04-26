@@ -4,8 +4,8 @@ Windows Registry Editor Version 5.00
 ; directories/folder in Windows Explorer
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Run Batch script]
-@="&QuickLaunchh Unreal Engine here"
+@="&QuickLaunch Unreal Engine here"
 "Icon"="%SystemRoot%\\System32\\shell32.dll,71"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Run Batch script\command]
-@="D:\\1\\GitRepos\\ScottKirvan\\ContextMenu\\context-batch.bat \"%V\" IN_FOLDER"
+@="E:\\1\\GitRepos\\ScottKirvan\\UEQL\\src\\context-batch.bat \"%V\" IN_FOLDER"
