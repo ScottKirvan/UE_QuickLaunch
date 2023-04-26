@@ -14,6 +14,18 @@
 - [ ] Ueql - add icon
 - [ ] Ueql - add a link to reg file docs from microsoft
 - [ ] use at your own risk
+
+These reg files set up (or remove) registry entries for launching a batch file from the
+right-click context menu in Windows File Explorer.
+
+The launched batch file creates an Unreal uproject file either in the current directory, or 
+within the selected directory, and immediately launches unreal (if multiple versions are installed,
+the user is prompted for which build to open)
+
+If a uproject file already exists, it will not be overwritten, but will be opened directly.
+
+- [ ] TODO - add a list of all the registry keys that are created/touched, so that they can be found manually if needed
+- [ ] include a description of the difference between what this launches and what's enabled/setup in a default blank game template (lumen, modeling tools, etc.)
 ---
 
 <!--

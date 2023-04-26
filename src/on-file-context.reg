@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; Adds a context menu item when you right-click on a file name 
+; in Windows Explorer
+
+[HKEY_CLASSES_ROOT\*\shell\Run script]
+@="&Run Batch script (file)"
+"Icon"="%SystemRoot%\\System32\\shell32.dll,71"
+
+[HKEY_CLASSES_ROOT\*\shell\Run script\command]
+@="\"D:\\1\\GitRepos\\ScottKirvan\\ContextMenu\\context-batch.bat\" \"%1\" ON_FILE"
