@@ -27,14 +27,14 @@ Maybe you can mention me or this repo in the acknowledgements too
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>UEQL</h1>
   
   <p>
-    An awesome README template for your projects! 
+    Yeah - in file explorer, right-click in a folder, or on a folder, and it creates and launches a blank unreal project with the same name as the folder. If the project file already exists, it just open it.
   </p>
   
   
-ScottKirvan/ScooterGitTemplate
+ScottKirvan/UEQL
 <!-- Badges -->
 <p>
   <a href="https://github.com/ScottKirvan/ScooterGitTemplate/graphs/contributors">
