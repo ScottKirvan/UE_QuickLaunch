@@ -1,6 +1,20 @@
 # Whiteboard
 
+- [ ] uequicklaunch (ueql) check filename for spaces
+- [ ] Ueql - implement error handling
+- [ ] ueql - switch Statement using 'call' - for handling of type of context click and for errors 
+- [ ] ueql - simplify code by setting up var strings before doing the actual work
+- [ ] Ueql - something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
+- [ ] Ueql - get this in github
+- [ ] ueql - document unc path issue
 
+----
+
+- [ ] ueql - windows only
+- [ ] Ueql - add icon
+- [ ] Ueql - add a link to reg file docs from microsoft
+- [ ] 
+---
 
 <!--
 Hey, thanks for using the awesome-readme-template template.  
