@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="resources/default.png" alt="logo" width="256" height="auto" />
+  <img src="resources/logo.png" alt="logo" width="256" height="auto" />
   <h1>UE_QuickLaunch</h1>
   
   <p>
