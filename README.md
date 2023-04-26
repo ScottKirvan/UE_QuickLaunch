@@ -4,7 +4,7 @@
   <h1>UE_QuickLaunch</h1>
   
   <p>
-  Add a right-click context menu to launch Unreal Engine when you right-clicked in a folder, or on a folder.  Create and launche a blank unreal project with the same name as the folder.  If the project file already exists, it just open it.
+  Add a right-click context menu to launch Unreal Engine when you right-clicked in a folder, or on a folder.  Create and launch a blank unreal project with the same name as the folder.  If the project file already exists, it just open it.
   </p>
   
   
