@@ -75,7 +75,10 @@ ScottKirvan/ScooterGitTemplate
 <br />
 
 
-# [ScooterGitTemplate](https://github.com/ScottKirvan/ScooterGitTemplate)
-
+# [UEQL](https://github.com/ScottKirvan/UEQL)
+## what it is
+## how to install it
+## How to use it
+---
 [CHANGELOG](notes/CHANGELOG.md)  
 [TODO](notes/TODO.md)
