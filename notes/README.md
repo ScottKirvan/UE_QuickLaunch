@@ -14,7 +14,7 @@ The following examples are based on a reworked and fixed answer from:  https://s
 > **Note** The process outlined below does NOT work with **UNC paths**
 
 # Overview
-Without going into too much detail, the Registry is organized like a directly structure.  Each "directory" is a Key, and in the same way that directories can subdirectories, keys can have subkeys.  Each key can also *store* zero or more values  -- this is conceptually similar to directory structures:  A directory could have zero or more files stored under it.  So, keys can optionally hold subkeys and values, and each of those subkeys can alternatively have more subkeys and values, ad infinitum.
+Without going into too much detail, the Registry is organized like a directly structure.  Each "directory" is a Key, and in the same way that directories can have subdirectories, keys can have subkeys.  Each key can also *store* zero or more values  -- this is conceptually similar to directory structures:  A directory could have zero or more files stored under it.  So, keys can optionally hold subkeys and values, and each of those subkeys can alternatively have more subkeys and values, ad infinitum.
 
 In our situation, in order to populate the right click menus, Windows Explorer looks at what's listed as subkeys in specific registry keys.  There's a set of them for right-clicking on files, and a set for right-clicking on folders, and a set for right clicking in an empty area that could eventually hold a file or a folder.  There are two specific keys, one with values that describe the look of the menu, and one with values that contain the `command` that Windows Explorer will call (in our case, it will run a batch file). 
 
