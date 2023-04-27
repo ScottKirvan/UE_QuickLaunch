@@ -37,7 +37,7 @@ ScottKirvan/UE_QuickLaunch
 <h4>
     <a href="https://github.com/ScottKirvan/UE_QuickLaunch/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/ScottKirvan/UE_QuickLaunch">Documentation</a>
+    <a href="https://github.com/ScottKirvan/UE_QuickLaunch#readme">Documentation</a>
   <span> · </span>
     <a href="https://github.com/ScottKirvan/UE_QuickLaunch/issues/">Report Bug</a>
   <span> · </span>
