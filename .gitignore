@@ -1,3 +1,7 @@
 ScooterGitTemplate.code-workspace
 .obsidian/*
 temp/*
+src/skvfximageres/.vs/*
+src/skvfximageres/x64/*
+src/skvfximageres/skvfximageres.sln
+*.dead
