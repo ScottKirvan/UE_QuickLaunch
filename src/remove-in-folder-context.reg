@@ -1,4 +1,4 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_CLASSES_ROOT\Directory\Background\shell\Run Batch script\command]
-[-HKEY_CLASSES_ROOT\Directory\Background\shell\Run Batch script]
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\UE_QuickLaunch\command]
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\UE_QuickLaunch]

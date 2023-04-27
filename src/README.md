@@ -56,11 +56,11 @@ Windows Registry Editor Version 5.00
 ; Adds a context menu item when you right click on a directories/folder 
 ; name in Windows Explorer
 
-[HKEY_CLASSES_ROOT\Directory\shell\Run Batch script]
+[HKEY_CLASSES_ROOT\Directory\shell\ContextTestKey]
 @="&Run Batch script"
 
-[HKEY_CLASSES_ROOT\Directory\shell\Run Batch script\command]
-@="\"H:\\BATCH_FILE_PATH\\context-batch.bat\" \"%1\""
+[HKEY_CLASSES_ROOT\Directory\shell\ContextTestKey\command]
+@=H:\\BATCH_FILE_PATH\\context-batch.bat \"%V\""
 ```
 
 To add a right-click context menu when you click on a file:
@@ -70,22 +70,22 @@ Windows Registry Editor Version 5.00
 ; Adds a context menu item when you right-click on a file name 
 ; in Windows Explorer
 
-[HKEY_CLASSES_ROOT\*\shell\Run script]
+[HKEY_CLASSES_ROOT\*\shell\ContextTestKey]
 @="Run &script"
 
-[HKEY_CLASSES_ROOT\*\shell\Run script\command]
-@="\"H:\\BATCH_FILE_PATH\\context-batch.bat\" \"%1\""
+[HKEY_CLASSES_ROOT\*\shell\ContextTestKey\command]
+@=H:\\BATCH_FILE_PATH\\context-batch.bat \"%V\""
 ```
 
 To add a right-click context menu for when you right-click on the empty space within a directory:
 ```
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\Directory\Background\shell\Run Batch script]
+[HKEY_CLASSES_ROOT\Directory\Background\shell\ContextTestKey]
 @="&Run Batch script"
 "Icon"="%SystemRoot%\\System32\\shell32.dll,71"
 
-[HKEY_CLASSES_ROOT\Directory\Background\shell\Run Batch script\command]
+[HKEY_CLASSES_ROOT\Directory\Background\shell\ContextTestKey\command]
 @="H:\\BATCH_FILE_PATH\\context-batch.bat \"%V\""
 ```
 
@@ -102,8 +102,8 @@ For example, to remove the keys that were installed when you installed the "clic
 ```
 Windows Registry Editor Version 5.00
 
-[-HKEY_CLASSES_ROOT\*\shell\Run script\command]
-[-HKEY_CLASSES_ROOT\*\shell\Run script]
+[-HKEY_CLASSES_ROOT\*\shell\ContextTestKey\command]
+[-HKEY_CLASSES_ROOT\*\shell\ContextTestKey]
 ```
 
 

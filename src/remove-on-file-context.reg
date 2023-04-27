@@ -1,4 +1,4 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_CLASSES_ROOT\*\shell\Run script\command]
-[-HKEY_CLASSES_ROOT\*\shell\Run script]
+[-HKEY_CLASSES_ROOT\*\shell\UE_QuickLaunch\command]
+[-HKEY_CLASSES_ROOT\*\shell\UE_QuickLaunch]

@@ -3,10 +3,10 @@ Windows Registry Editor Version 5.00
 ; Adds a context menu item when you right click on a directories/folder 
 ; name in Windows Explorer
 
-[HKEY_CLASSES_ROOT\Directory\shell\Run Batch script]
+[HKEY_CLASSES_ROOT\Directory\shell\UE_QuickLaunch]
 @="&QuickLaunch Unreal Engine here"
 "Icon"="%SystemRoot%\\System32\\shell32.dll,71"
 
 
-[HKEY_CLASSES_ROOT\Directory\shell\Run Batch script\command]
-@="\"D:\\1\\GitRepos\\ScottKirvan\\ContextMenu\\context-batch.bat\" \"%1\" ON_FOLDER"
+[HKEY_CLASSES_ROOT\Directory\shell\UE_QuickLaunch\command]
+@="E:\\1\\GitRepos\\ScottKirvan\\UE_QuickLaunch\\bin\\ue-quicklaunch.bat \"%V\" ON_FOLDER"
