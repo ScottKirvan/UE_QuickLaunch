@@ -36,13 +36,13 @@ echo."Icon"="%iconpath%" >> "%regfile%"
 echo. >> "%regfile%"
 echo.[HKEY_CLASSES_ROOT\Directory\shell\UE_QuickLaunch\command] >> "%regfile%"
 echo.@="%batchscript% \"%%V\" ON_FOLDER" >> "%regfile%"
-echo. >> "%regfile%"
-echo.[HKEY_CLASSES_ROOT\Unreal.ProjectFile\shell\UE_QuickLaunch] >> %regfile%
-echo.@="&QuickLaunch Unreal Engine here" >> "%regfile%"
-echo."Icon"="%iconpath%" >> "%regfile%"
-echo. >> "%regfile%"
-echo.[HKEY_CLASSES_ROOT\Unreal.ProjectFile\shell\UE_QuickLaunch\command] >> %regfile%
-echo.@="%batchscript% \"%%V\" ON_UPROJECT" >> "%regfile%" 
+; echo. >> "%regfile%"
+; echo.[HKEY_CLASSES_ROOT\Unreal.ProjectFile\shell\UE_QuickLaunch] >> %regfile%
+; echo.@="&QuickLaunch Unreal Engine here" >> "%regfile%"
+; echo."Icon"="%iconpath%" >> "%regfile%"
+; echo. >> "%regfile%"
+; echo.[HKEY_CLASSES_ROOT\Unreal.ProjectFile\shell\UE_QuickLaunch\command] >> %regfile%
+; echo.@="%batchscript% \"%%V\" ON_UPROJECT" >> "%regfile%" 
 
 
 
