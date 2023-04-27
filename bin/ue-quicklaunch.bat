@@ -36,4 +36,4 @@ echo @="%var%\\context-batch.bat \"%V\" IN_FOLDER"
 
 
 :END
-PAUSE
+:: PAUSE
