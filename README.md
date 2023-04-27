@@ -82,7 +82,7 @@ The following Project Settings are also different:
 
 | Setting | QuickLaunch Project | Launcher Blank Game |
 |---------|--------------------|------------------------|
-| Platforms, Windwos, D3D Shader format | SM5 | SM6 |
+| Platforms, Windows, D3D Shader format | SM5 | SM6 |
 | Platforms, Windows, Default RHI | "Default" | "DirectX 12" |
 | Project - Target Hardware, Target Hardware | "Unspecified", "Unspecified" | "Desktop", "Maximum" |
 | Engine, Rendering, Dynamic GI Method | "None"* | "Lumen" |
