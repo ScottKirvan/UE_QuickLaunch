@@ -4,6 +4,8 @@
 set regfile=%~dp0\temp\install.reg
 set batchscript=%~dp0
 set batchscript=%batchscript:\=\\%bin\\ue-quicklaunch.bat
+set iconpath=%~dp0
+set iconpath=%iconpath:\=\\%bin\\skvfximageres.dll,0
 
 echo Creating REG file in %regfile%
 
@@ -20,7 +22,7 @@ echo.; directories/folder in Windows Explorer >> "%regfile%"
 echo.  >> "%regfile%"
 echo.[HKEY_CLASSES_ROOT\Directory\Background\shell\UE_QuickLaunch] >> "%regfile%"
 echo.@="&QuickLaunch Unreal Engine here" >> "%regfile%"
-echo."Icon"="%%SystemRoot%%\\System32\\shell32.dll,71" >> "%regfile%"
+echo."Icon"="%iconpath%" >> "%regfile%"
 echo.  >> "%regfile%"
 echo.[HKEY_CLASSES_ROOT\Directory\Background\shell\UE_QuickLaunch\command] >> "%regfile%"
 echo.@="%batchscript% \"%%V\" IN_FOLDER" >> "%regfile%"
@@ -30,7 +32,7 @@ echo.; name in Windows Explorer >> "%regfile%"
 echo. >> "%regfile%"
 echo.[HKEY_CLASSES_ROOT\Directory\shell\UE_QuickLaunch] >> "%regfile%"
 echo.@="&QuickLaunch Unreal Engine here" >> "%regfile%"
-echo."Icon"="%%SystemRoot%%\\System32\\shell32.dll,71" >> "%regfile%"
+echo."Icon"="%iconpath%" >> "%regfile%"
 echo. >> "%regfile%"
 echo.[HKEY_CLASSES_ROOT\Directory\shell\UE_QuickLaunch\command] >> "%regfile%"
 echo.@="%batchscript% \"%%V\" ON_FOLDER" >> "%regfile%"
