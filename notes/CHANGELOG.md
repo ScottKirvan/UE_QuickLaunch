@@ -7,14 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.1] - 2023-04-29
+## [1.0.1] - 2023-04-27
 
 ### Fixed
 
 - last thing I did yesterday was add a "click on uproject" mode.  Epic Games Launcher sees the change
 to how it wants those registry keys set and resets them.  I removed this feature for now -- will see if I can't figure out my own handler for this later.
 
-## [1.0.0] - 2023-04-28
+## [1.0.0] - 2023-04-27
 
 ### Added
 
@@ -24,7 +24,7 @@ to how it wants those registry keys set and resets them.  I removed this feature
 
 - tons.  Initial check-in was for safety first.
 
-## [0.0.1] - 2023-04-27
+## [0.0.1] - 2023-04-26
 
 ### Added
 
