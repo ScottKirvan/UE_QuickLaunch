@@ -1,6 +1,6 @@
 
 # Background
-To get right-click context menus to work with Windows, applications add registry settings that tell Windows Explorer what to populate those right-menus menus with, and what to do when the user selects those menu items.  
+To get right-click context menus to work with Windows, applications add registry settings that tell Windows Explorer what to populate those right-click menus with, and what to do when the user selects those menu items.  
 
 Messing with the registry can be a bit daunting, and if you mess it up you can fuxor up your system pretty quickly.  Many applications add these context menus during install, so this isn't an unusual or hacky thing to do, but it gets down into the guts of how windows works, so you want to be careful.  I've had a bad install mess up my system.  It's not fun, and it's not easy to fix, so please beware and always be sure you trust the source you're getting registry code from.
 
