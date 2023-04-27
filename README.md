@@ -46,7 +46,9 @@ ScottKirvan/UE_QuickLaunch
 </div>
 
 <br />
+
 # [UE_QuickLaunch](https://github.com/ScottKirvan/UE_QuickLaunch)
+
 When I'm debugging and iterating on multiple projects in Unreal, I can easily generate a few dozen test files during the day.  This UE_QuickLaunch lets us bypass the Epic Games Launcher and the Template Selection dialogs entirely -- directly creating and opening Unreal with a blank starter project.
 
 ## how to install it
