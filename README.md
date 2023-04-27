@@ -49,9 +49,25 @@ ScottKirvan/UE_QuickLaunch
 
 
 # [UE_QuickLaunch](https://github.com/ScottKirvan/UE_QuickLaunch)
+
+
 ## what it is
 ## how to install it
+Clone or unzip a copy of this repository where you would like it to live and run the `install.bat` file -- you can run the installer safely from file explorer if you wish.  It will prompt you for confirmation before it goes ahead with the installation.  The installer will set up paths to the files in this repo's bin directory, so once it's installed, that directory should stay put.  Everything else can be moved or deleted.  
+
 ## How to use it
+Normal usage will look like this:
+
+From within file explorer
+- From within **File Explorer**
+- create a **New Folder** -- give it a name with no spaces (there's no error checking yet)
+- double click that folder to enter the new directory
+- right-click anywhere within that empty directory and select **QuickLaunch Unreal Engine from here** from the context menu.
+If you have more than one version of Unreal installed, you will be prompted to 
+
+
+
+
 ---
 [CHANGELOG](notes/CHANGELOG.md)  
 [TODO](notes/TODO.md)
