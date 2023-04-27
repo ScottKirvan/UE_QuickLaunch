@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.0.1] - 2023-01-06
+## [1.0.0] - 2023-04-28
+### Added
+- several new feature, an installer and an uninstaller, a vscode project for a reserource-only dll, which provides a pretty icon for us, and some initial documentation
+### Refactored
+- tons.  Initial check-in was for safety first.
+
+## [0.0.1] - 2023-04-27
 ### Added
 - initial repo/template check-in
 

@@ -46,12 +46,9 @@ ScottKirvan/UE_QuickLaunch
 </div>
 
 <br />
-
-
 # [UE_QuickLaunch](https://github.com/ScottKirvan/UE_QuickLaunch)
 When I'm debugging and iterating on multiple projects in Unreal, I can easily generate a few dozen test files during the day.  This UE_QuickLaunch lets us bypass the Epic Games Launcher and the Template Selection dialogs entirely -- directly creating and opening Unreal with a blank starter project.
 
-## what it is
 ## how to install it
 Clone or unzip a copy of this repository where you would like it to live and run the `install.bat` file -- you can run the installer safely from file explorer if you wish.  It will prompt you for confirmation before it goes ahead with the installation.  The installer will set up paths to the files in this repo's bin directory, so once it's installed, that directory should stay put.  Everything else can be moved or deleted.  
 
@@ -93,6 +90,9 @@ The following Project Settings are also different:
 *enabling Lumen automatically enables several settings that I've omitted from the above list because they match once lumen is enabled. 
 
 The QuickLauncher project ends up being a just barely lighter starting point then a default Launcher based project, but it's pretty quick and easy to match those settings if needed.  If there's interest in having the QuickLauncher version more closely match config of the Launcher projects, it can be added, but it's not a trival bit of work due to the changes between Unreal 4 and 5.  
+
+## How it works
+This works by adding some registry hooks that launch batch files.  I've written up a short document about how this works [here](notes/README.md).
 
 ---
 [CHANGELOG](notes/CHANGELOG.md)  
