@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2023-04-27
+
+### Fixed
+
+- I left in a pause at the end of the batch script that launches unreal.  This is nice to have for debugging and seeing what's going on, but not necessary, so I removed it.
+
 ## [1.0.1] - 2023-04-27
 
 ### Fixed
