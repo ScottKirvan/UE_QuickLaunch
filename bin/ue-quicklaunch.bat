@@ -45,4 +45,4 @@ if %mode%==ON_UPROJECT (
 )
 
 :END
-PAUSE
+::PAUSE
