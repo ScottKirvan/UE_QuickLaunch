@@ -1,5 +1,6 @@
 TODO
 ----
+- [ ] roll this into a standard windows installer
 - [ ] check filename for spaces
 - [ ] implement error handling
 - [ ] switch Statement using 'call' - for handling of type of context click and for errors 
