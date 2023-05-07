@@ -60,7 +60,7 @@ Clone or unzip a copy of this repository where you would like it to live and run
 
 From within **File Explorer**
 
-- create a **New Folder** ([CTRL+SHIFT+N]) -- rename this file to whatever you want you unreal project to be called.
+- create a **New Folder** ([CTRL+SHIFT+N]) -- rename this file to whatever you want your unreal project to be called.
 - double click that folder to enter the new directory.
 - right-click anywhere within that empty directory and select **QuickLaunch Unreal Engine from here**.
 If you have more than one version of Unreal installed, you will be prompted to pick which version you wish to start, and Unreal will startup with a blank level open.
