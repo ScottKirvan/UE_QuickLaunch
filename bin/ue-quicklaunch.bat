@@ -10,6 +10,52 @@ For %%A in ("%Filepath%") do (
     Set Folder=%%~dpA
     Set Name=%%~nxA
 )
+:: replace spaces with underscores in Name
+Set Name=%Name: =_%
+:: replace decimal points with underscores in Name
+Set Name=%Name:.=_% 
+:: replace hyphens with underscores in Name
+Set Name=%Name:-=_%
+:: replace plus signs with underscores in Name
+Set Name=%Name:+=_%
+:: replace parentheses with underscores in Name
+Set Name=%Name:(=_%
+:: replace parentheses with underscores in Name
+Set Name=%Name:)=_%
+:: replace ampersands with underscores in Name
+:: Set Name=%Name:&=_%
+:: replace apostrophes with underscores in Name
+Set Name=%Name:'=_%
+:: replace commas with underscores in Name
+ Set Name=%Name:,=_%
+:: replace exclamation points with underscores in Name
+ Set Name=%Name:!=_%
+:: replace at signs with underscores in Name
+Set Name=%Name:@=_%
+:: replace number signs with underscores in Name
+Set Name=%Name:#=_%
+:: replace dollar signs with underscores in Name
+Set Name=%Name:$=_%
+:: replace percent signs with underscores in Name
+:: Set Name=%Name:%%=_%
+:: replace caret signs with underscores in Name
+:: Set Name=%Name:^=_%
+:: if first character in Name is a any number, prepend Name with the letter A
+if "%Name:~0,1%"=="0" Set Name=A%Name%
+if "%Name:~0,1%"=="1" Set Name=A%Name%
+if "%Name:~0,1%"=="2" Set Name=A%Name%
+if "%Name:~0,1%"=="3" Set Name=A%Name%
+if "%Name:~0,1%"=="4" Set Name=A%Name%
+if "%Name:~0,1%"=="5" Set Name=A%Name%
+if "%Name:~0,1%"=="6" Set Name=A%Name%
+if "%Name:~0,1%"=="7" Set Name=A%Name%
+if "%Name:~0,1%"=="8" Set Name=A%Name%
+if "%Name:~0,1%"=="9" Set Name=A%Name%
+:: if first character in Name is an underscore, prepend Name with the letter A
+if "%Name:~0,1%"=="_" Set Name=A%Name%
+
+
+set iconpath=%iconpath:\=\\%bin\\skvfximageres.dll,0
 echo.Filepath is: %Filepath%
 echo.Folder is: %Folder%
 echo.Name is: %Name%
@@ -45,4 +91,4 @@ if %mode%==ON_UPROJECT (
 )
 
 :END
-::PAUSE
+PAUSE

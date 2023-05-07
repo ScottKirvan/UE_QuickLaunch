@@ -1,6 +1,6 @@
 TODO
 ----
-- [ ] check filename for spaces
+- [x] check filename for spaces
 - [ ] implement error handling
 - [ ] switch Statement using 'call' - for handling of type of context click and for errors 
 - [ ] simplify code by setting up var strings before doing the actual work
