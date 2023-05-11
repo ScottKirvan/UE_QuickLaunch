@@ -12,9 +12,9 @@ For %%A in ("%Filepath%") do (
 )
 :: replace spaces with underscores in Name
 Set Name=%Name: =_%
-:: replace decimal points with underscores in Name
-Set Name=%Name:.=_% 
-:: replace hyphens with underscores in Name
+:: :: replace decimal points with underscores in Name
+:: Set Name=%Name:.=_% 
+replace hyphens with underscores in Name
 Set Name=%Name:-=_%
 :: replace plus signs with underscores in Name
 Set Name=%Name:+=_%
@@ -35,7 +35,7 @@ Set Name=%Name:@=_%
 :: replace number signs with underscores in Name
 Set Name=%Name:#=_%
 :: replace dollar signs with underscores in Name
-Set Name=%Name:$=_%
+:: Set Name=%Name:$=_%
 :: replace percent signs with underscores in Name
 :: Set Name=%Name:%%=_%
 :: replace caret signs with underscores in Name
