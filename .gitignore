@@ -6,3 +6,5 @@ src/skvfximageres/x64/*
 src/skvfximageres/skvfximageres.sln
 *.dead
 src/.vs/*
+src/UE_QuickLaunch_installer/obj/*
+src/UE_QuickLaunch/UE_QuickLaunch.vcxproj.user

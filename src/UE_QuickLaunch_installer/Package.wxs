@@ -1,0 +1,9 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="UE_QuickLaunch_installer" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="5841e624-2d30-4a43-9d17-ac613df29903">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ExampleComponents" />
+    </Feature>
+  </Package>
+</Wix>
