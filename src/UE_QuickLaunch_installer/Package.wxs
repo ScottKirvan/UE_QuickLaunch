@@ -3,7 +3,7 @@
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
     <Feature Id="Main">
-      <ComponentGroupRef Id="ExampleComponents" />
+      <ComponentGroupRef Id="MainComponents" />
     </Feature>
   </Package>
 </Wix>
