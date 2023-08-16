@@ -1,2 +1,6 @@
 ﻿<Project Sdk="WixToolset.Sdk/4.0.0">
+  <ItemGroup>
+    <ProjectReference Include="..\skvfximageres\skvfximageres.vcxproj" />
+    <ProjectReference Include="..\UE_QuickLaunch\UE_QuickLaunch.vcxproj" />
+  </ItemGroup>
 </Project>
