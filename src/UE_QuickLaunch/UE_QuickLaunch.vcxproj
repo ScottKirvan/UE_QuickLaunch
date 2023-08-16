@@ -82,7 +82,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)..\..\bin\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -101,7 +101,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)..\..\bin\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -116,7 +116,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)..\..\bin\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -135,7 +135,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)..\..\bin\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
