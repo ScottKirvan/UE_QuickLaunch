@@ -95,7 +95,7 @@ The line `"Icon"="%SystemRoot%\\System32\\shell32.dll,71"` is just an example 
 
 Alternatively, you can add your batch script to the `Send To` item list by creating a shortcut to your batch script and placing it under `%APPDATA%\Microsoft\Windows\SendTo` (or enter `shell:sendto` into the address bar)
 
-## To Remove The Registly Changes
+## To Remove The Registery Changes
 > **Note**:  This is to **Remove**, not uninstall or roll-back any changes -- this just deletes the keys you've added in case you feel you want to remove any keys you've added.
 
 For example, to remove the keys that were installed when you installed the "click-on-a-file" context menu, all you do is list the same Registry Keys used above with a "-" in front of them.  Here's the REG file that will remove the "click-on-a-file" keys from above:
