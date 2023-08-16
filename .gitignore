@@ -8,3 +8,11 @@ src/skvfximageres/skvfximageres.sln
 src/.vs/*
 src/UE_QuickLaunch_installer/obj/*
 src/UE_QuickLaunch/UE_QuickLaunch.vcxproj.user
+src/Debug/*
+src/x64/*
+src/skvfximageres/Release/*
+src/UE_QuickLaunch/Debug/*
+src/UE_QuickLaunch/Release/*
+src/UE_QuickLaunch/x64/*
+src/UE_QuickLaunch_installer/bin/*
+src/UE_QuickLaunch_installer/obj/*
