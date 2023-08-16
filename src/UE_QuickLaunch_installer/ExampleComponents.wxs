@@ -2,7 +2,10 @@
   <Fragment>
     <ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
       <Component>
-        <File Source="ExampleComponents.wxs" />
+        <File Source="skvfximageres.dll" />
+      </Component>
+      <Component>
+        <File Source="ue-quicklaunch.bat" />
       </Component>
     </ComponentGroup>
   </Fragment>
