@@ -1,0 +1,36 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="MainComponents" Directory="INSTALLFOLDER">
+      <!-- File Components -->
+      <Component Id="ResourceDLL" Guid="50be778e-5086-424a-bf5d-9f1bf2a6c928">
+        <File Source="skvfximageres.dll" />
+      </Component>
+      <Component Id="QuickLaunchBatFile" Guid="920b1a75-8140-4b5f-b94c-2976bdd97df7">
+        <File Source="ue-quicklaunch.bat" />
+      </Component>
+      <!-- Registry Components -->
+      <Component Id="RegistryComponent_clickInFolder" Guid="AB8C4904-52D3-4444-A80D-EDC9968D3EF4">
+            <RegistryKey Root="HKCR" Key="Directory\Background\shell\UE_QuickLaunch">
+              <RegistryValue Type="string" Value="&amp;QuickLaunch Unreal Engine here" /> 
+              <RegistryValue Type="string" Name="Icon" Value="[INSTALLFOLDER]skvfximageres.dll,0" />
+            </RegistryKey>
+      </Component>
+      <Component Id="RegistryComponent_clickInFolderCommand" Guid="30204b8d-5a9b-4642-9109-9b675518560f">
+            <RegistryKey Root="HKCR" Key="Directory\Background\shell\UE_QuickLaunch\command">
+              <RegistryValue Type="string" Value="[INSTALLFOLDER]ue-quicklaunch.bat &quot;%V&quot; IN_FOLDER" />
+            </RegistryKey>
+      </Component>
+      <Component Id="RegistryComponent_clickOnFolder" Guid="84db9fb1-97b8-4640-89ab-a0352f709362">
+            <RegistryKey Root="HKCR" Key="Directory\shell\UE_QuickLaunch">
+              <RegistryValue Type="string" Value="&amp;QuickLaunch Unreal Engine here" /> 
+              <RegistryValue Type="string" Name="Icon" Value="[INSTALLFOLDER]skvfximageres.dll,0" />
+            </RegistryKey>
+      </Component>
+      <Component Id="RegistryComponent_clickOnFolderCommand" Guid="5afe7d7a-0f6d-449f-9af4-2fa852467d1e">
+            <RegistryKey Root="HKCR" Key="Directory\shell\UE_QuickLaunch\command">
+              <RegistryValue Type="string" Value="[INSTALLFOLDER]ue-quicklaunch.bat &quot;%V&quot; ON_FOLDER" />
+            </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

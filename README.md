@@ -4,7 +4,7 @@
   <h1>UE_QuickLaunch</h1>
   
   <p>
- File Explorer right-click context menu Quick Launcher for Unreal Engine Projects. Click in, or on a folder, and quickly launch or create a minimal unreal project (`uproject`) with the same name as the folder. If the project file already exists, just open it.
+ File Explorer right-click context menu Quick Launcher for Unreal Engine Projects. Click in or on a folder, and quickly create a minimal unreal project (`uproject`) with the same name as the folder. If the project file already exists, just open it.
   </p>
   
 ScottKirvan/UE_QuickLaunch
@@ -48,11 +48,15 @@ ScottKirvan/UE_QuickLaunch
 
 # [UE_QuickLaunch](https://github.com/ScottKirvan/UE_QuickLaunch)
 
-When I'm debugging and iterating on multiple projects in Unreal, I can easily generate a few dozen test files during the day.  This UE_QuickLaunch lets us bypass the Epic Games Launcher and the Template Selection dialogs entirely -- directly creating and opening Unreal with a blank starter project.
+When I'm debugging and iterating on multiple projects in Unreal, I can easily generate a few dozen test files during the day.  This UE_QuickLaunch lets me bypass the Epic Games Launcher and the Template Selection dialogs entirely -- quickly creating and opening Unreal with a blank starter project.
 
-## how to install it
+## Installation
 
-Clone or unzip a copy of this repository where you would like it to live and run the `install.bat` file -- you can run the installer safely from file explorer if you wish.  It will prompt you for confirmation before it goes ahead with the installation.  The installer will set up paths to the files in this repo's bin directory, so once it's installed, that directory should stay put.  Everything else can be moved or deleted.  
+Download the latest installer release and run it.  The installer runs unassisted, installs into the default Program Files folder, and automatically sets up all the registry keys to handle the File Explorer right-click menus.
+
+## Building from source
+
+If you choose to build this from source, everything you need is packaged up as a **Microsoft Visual Studio Solution** in the `src` folder.  You'll need the **HeatWave** extension to build the installer itself.  See the additional notes in the src [README](src/README.md).
 
 ## How to use it
 
@@ -76,8 +80,8 @@ No launcher.  No template browser.  Just pure, sweet enginetime!
 
 ## Caveats
 
-- This is, of course, windows only since it's a feature of File Explorer.
-- In Unreal 5, the default template created by QuickLaunch is configured slightly different from a Launcher based blank project.  The differences are outlined below:
+- This is, of course, **Windows** only since it's a feature of File Explorer.
+- In Unreal 5, the default template created by **QuickLaunch** is configured slightly different from a Launcher based blank project.  The differences are outlined below:
 
 In the launcher based version:
 

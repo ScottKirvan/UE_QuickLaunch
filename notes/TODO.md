@@ -1,12 +1,8 @@
 TODO
 ----
-- [x] check filename for spaces
-- [ ] roll this into a standard windows installer
 - [ ] implement error handling
 - [ ] switch Statement using 'call' - for handling of type of context click and for errors 
 - [ ] simplify code by setting up var strings before doing the actual work
-- [ ] something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
-- [ ] add a list of all the registry keys that are created/touched, so that they can be found manually if needed
 
 
 In Progress
@@ -15,6 +11,7 @@ In Progress
 
 Done ✓
 ------
+- [x] add a list of all the registry keys that are created/touched, so that they can be found manually if needed
 - [x] get this in github
 - [x] document unc path issue
 - [x] windows only
@@ -22,8 +19,10 @@ Done ✓
 - [x] add a link to reg file docs from microsoft
 - [x] include a description of the difference between what this launched and what's enabled/setup in a default blank game template (lumen, modeling tools, etc.) 
 - [x] use at your own risk
+- [x] check filename for spaces
+- [x] roll this into a standard windows installer
 
 
 Not Gonna Do ✓
 ------
-- [X] .
+- [x] something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
