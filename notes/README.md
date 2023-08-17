@@ -108,3 +108,12 @@ Windows Registry Editor Version 5.00
 
 
 
+## Registry Keys Created and Used by UE_QuickLaunch
+```
+[HKEY_CLASSES_ROOT\Directory\Background\shell\UE_QuickLaunch]
+[HKEY_CLASSES_ROOT\Directory\Background\shell\UE_QuickLaunch\command]
+[HKEY_CLASSES_ROOT\Directory\shell\UE_QuickLaunch]
+[HKEY_CLASSES_ROOT\Directory\shell\UE_QuickLaunch\command]
+```
+
+
