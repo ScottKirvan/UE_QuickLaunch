@@ -52,7 +52,7 @@ When I'm debugging and iterating on multiple projects in Unreal, I can easily ge
 
 ## Installation
 
-Download the latest installer release and run it.  The installer runs unassisted, installs into the default Program Files folder, and automatically sets up all the registry keys to handle the File Explorer right-click menus.
+[Download](https://github.com/ScottKirvan/UE_QuickLaunch/releases/tag/v2.0.0) the latest installer release and run it.  The installer runs unassisted, installs into the default Program Files folder, and automatically sets up all the registry keys to handle the File Explorer right-click menus.
 
 ## Building from source
 
