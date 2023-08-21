@@ -7,7 +7,7 @@
  File Explorer right-click context menu Quick Launcher for Unreal Engine Projects. Click on or in a folder, and quickly create a minimal unreal project (`uproject`) with the same name as the folder. If the project file already exists, just open it.
   </p>
   
-ScottKirvan/UE_QuickLaunch
+<a href="https://github.com/ScottKirvan/UE_QuickLaunch">ScottKirvan/UE_QuickLaunch</a>
 <!-- Badges -->
 <p>
   <a href="https://github.com/ScottKirvan/UE_QuickLaunch/graphs/contributors">
@@ -46,7 +46,6 @@ ScottKirvan/UE_QuickLaunch
 
 <br />
 
-# [UE_QuickLaunch](https://github.com/ScottKirvan/UE_QuickLaunch)
 When I'm debugging and iterating on multiple projects in Unreal, I can easily generate a few dozen test files during the day.  This UE_QuickLaunch lets me bypass the Epic Games Launcher and the Template Selection dialogs entirely -- quickly creating and opening Unreal with a blank starter project.
 
 ## Installation
@@ -88,15 +87,15 @@ In the launcher based version:
 
 The following Project Settings are also different:
 
-| Setting | QuickLaunch Project | Launcher Blank Game |
-|---------|--------------------|------------------------|
-| Platforms, Windows, D3D Shader format | SM5 | SM6 |
-| Platforms, Windows, Default RHI | "Default" | "DirectX 12" |
-| Project - Target Hardware, Target Hardware | "Unspecified", "Unspecified" | "Desktop", "Maximum" |
-| Engine, Rendering, Dynamic GI Method | "None"* | "Lumen" |
-| Engine, Rendering, Shadow Map Method | "Shadow Maps" | "VIrtual Shadow Maps (beta)" |
-| Engine, Rendering, Extend default luminance range in auto exposure | disabled | enabled |
-| Engine, Input, Console Keys |   |  "Caret" has been added |
+| Setting                                                            | QuickLaunch Project          | Launcher Blank Game          |
+| ------------------------------------------------------------------ | ---------------------------- | ---------------------------- |
+| Platforms, Windows, D3D Shader format                              | SM5                          | SM6                          |
+| Platforms, Windows, Default RHI                                    | "Default"                    | "DirectX 12"                 |
+| Project - Target Hardware, Target Hardware                         | "Unspecified", "Unspecified" | "Desktop", "Maximum"         |
+| Engine, Rendering, Dynamic GI Method                               | "None"*                      | "Lumen"                      |
+| Engine, Rendering, Shadow Map Method                               | "Shadow Maps"                | "VIrtual Shadow Maps (beta)" |
+| Engine, Rendering, Extend default luminance range in auto exposure | disabled                     | enabled                      |
+| Engine, Input, Console Keys                                        |                              | "Caret" has been added       |
 
 *enabling Lumen automatically enables several settings that I've omitted from the above list because they match once lumen is enabled.
 
