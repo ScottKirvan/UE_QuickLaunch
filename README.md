@@ -1,13 +1,9 @@
 <div align="center">
 
   <img src="notes/images/banner.png" alt="logo" width="701" height="auto" />
-  <h1>UE_QuickLaunch</h1>
+  <h1><a href="https://github.com/ScottKirvan/UE_QuickLaunch">ScottKirvan/UE_QuickLaunch</a></h1>
+  <h3>A Right-click quick-launch menu for Unreal Engine</h3>
   
-  <p>
- Right-click on or in a folder, and quickly create a minimal unreal project (`uproject`) with the same name as the folder. If the project file already exists, just open it.
-  </p>
-  
-<a href="https://github.com/ScottKirvan/UE_QuickLaunch">ScottKirvan/UE_QuickLaunch</a>
 <!-- Badges -->
 <p>
   <a href="https://github.com/ScottKirvan/UE_QuickLaunch/graphs/contributors">
