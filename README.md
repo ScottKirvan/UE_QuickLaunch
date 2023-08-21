@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="notes/images/logo.png" alt="logo" width="256" height="auto" />
+  <img src="notes/images/banner.png" alt="logo" width="701" height="auto" />
   <h1>UE_QuickLaunch</h1>
   
   <p>
@@ -47,7 +47,6 @@ ScottKirvan/UE_QuickLaunch
 <br />
 
 # [UE_QuickLaunch](https://github.com/ScottKirvan/UE_QuickLaunch)
-
 When I'm debugging and iterating on multiple projects in Unreal, I can easily generate a few dozen test files during the day.  This UE_QuickLaunch lets me bypass the Epic Games Launcher and the Template Selection dialogs entirely -- quickly creating and opening Unreal with a blank starter project.
 
 ## Installation
