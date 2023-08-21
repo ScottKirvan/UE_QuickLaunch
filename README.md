@@ -50,7 +50,7 @@ When I'm debugging and iterating on multiple projects in Unreal, I can easily ge
 
 ## Building from source
 
-If you choose to build this from source, everything you need is packaged up as a **Microsoft Visual Studio Solution** in the `src` folder.  You'll need the **HeatWave** extension to build the installer itself.  See the additional notes in the src [README](src/README.md).
+If you choose to build this from source, everything you need is packaged up as a **Microsoft Visual Studio Solution** in the `src` folder.  You'll need the Visual Studio **HeatWave** extension to build the installer itself.  See the additional notes in the src [README](src/README.md).
 
 ## How to use it
 
