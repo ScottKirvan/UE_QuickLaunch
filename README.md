@@ -4,7 +4,7 @@
   <h1>UE_QuickLaunch</h1>
   
   <p>
- File Explorer right-click context menu Quick Launcher for Unreal Engine Projects. Click in or on a folder, and quickly create a minimal unreal project (`uproject`) with the same name as the folder. If the project file already exists, just open it.
+ File Explorer right-click context menu Quick Launcher for Unreal Engine Projects. Click on or in a folder, and quickly create a minimal unreal project (`uproject`) with the same name as the folder. If the project file already exists, just open it.
   </p>
   
 ScottKirvan/UE_QuickLaunch
