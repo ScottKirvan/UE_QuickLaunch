@@ -7,7 +7,7 @@ The installer is built using **WiX v4**, and uses the **HeatWave** extension:
 
 If you load the solution and the installer project comes up as "incompatible" (you'll get an error on load), just enable the extension, restart, and then right click on the **UE_QuickLaunch_installer** project, and select "reload project" (or something similar to that).
 
-If you're interested in learning how to make an MSI installer using something like HeatWave, I found the Wix v4 documentation pretty impenetrable, but ChatGPT did a pretty good job at getting me started with the xml formatting.
+If you're interested in learning how to make an MSI installer using something like HeatWave, I found the Wix v4 documentation pretty impenetrable, but ChatGPT did a pretty good job at getting me started with the xml syntax.
 
 The installer, `UE_QuickLaunch_installer.msi`, runs unassisted and builds into the EU_QuickLaunchInstaller/bin folder and installs to `ProgramFiles/SKVFX UE_QuickLaunch`. It can be uninstalled/modified, in **Window's Settings > Apps > Installed apps**.
 
