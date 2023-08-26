@@ -1,6 +1,6 @@
 # Explanatory notes on the organization of this project.
 
-I've turned this into a **Microsoft Visual Studio Solution** to organize the dependencies between the resource project (`skvfximageres`), the batch files (`UE_QuickLaunch`) and the installer (`UE_QuickLaunch_installer`) projects.
+I've turned this into a **Microsoft Visual Studio Solution** to organize the dependencies between the resource project (`skvfximageres`), the batch files (`UE_QuickLaunch`) and the installer (`UE_QuickLaunch_installer`) projects.  I use **Microsoft Visual Studio Community 2022**
 
 The installer is built using **WiX v4**, and uses the **HeatWave** extension:  
 ![](../notes/images/Pasted%20image%2020230816133706.png)
