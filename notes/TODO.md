@@ -1,8 +1,8 @@
 TODO
 ----
-- [ ] implement error handling
-- [ ] switch Statement using 'call' - for handling of type of context click and for errors 
-- [ ] simplify code by setting up var strings before doing the actual work
+- [ ] implement better error handling - there's still some characters that are invalid in UE project files
+- [ ] switch Statement using 'call' - for handling of type of context click and for errors - #someday/maybe
+- [ ] simplify code by setting up var strings before doing the actual work - #someday/maybe
 
 
 In Progress
