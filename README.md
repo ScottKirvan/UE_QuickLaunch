@@ -78,19 +78,19 @@ No launcher.  No template browser.  No waiting.  Just one click to sweet, sweet 
 
 In the launcher based version:
 
-> - The ModelingToolsEditorMode plugin is enabled.
+> - The **Modeling Tools Editor Mode** plugin is enabled.
 >
 > - The following Project Settings are  changed:
 >
 > | Setting                                                            | **QuickLaunch** Project          | Launcher Blank Game          |
 | ------------------------------------------------------------------ | ---------------------------- | ---------------------------- |
-| Platforms, Windows, D3D Shader format                                 | SM5                          | SM6                          |
-| Platforms, Windows, Default RHI                                              | "Default"                    | "DirectX 12"                 |
-| Project - Target Hardware, Target Hardware                             | "Unspecified", "Unspecified" | "Desktop", "Maximum"         |
-| Engine, Rendering, Dynamic GI Method                                   | "None"*                      | "Lumen"                      |
-| Engine, Rendering, Shadow Map Method                                | "Shadow Maps"                | "VIrtual Shadow Maps (beta)" |
-| Engine, Rendering, Extend default luminance range in auto exposure | disabled                     | enabled                      |
-| Engine, Input, Console Keys                                                      |                              | "Caret" has been added       |
+| Project > Target Hardware > **Optimize project settings for**                                       | "Unspecified", "Unspecified" | "Desktop", "Maximum"  |    
+| Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method** | "None"*                      | "Lumen"                      |
+| Engine > Rendering > Shadows > **Shadow Map Method**                                           | "Shadow Maps"                | "VIrtual Shadow Maps (beta)" |
+| Engine > Rendering > Default Settings > **Extend default luminance range in Auto Exposure settings**  | disabled | enabled  |
+| Platforms > Windows > D3D12 Targeted Shader Formats > **SM5**                                | enabled                          | diabled                          |
+| Platforms > Windows > D3D12 Targeted Shader Formats > **SM6**                                 | diabled                          | enabled                          |
+| Platforms > Windows Targeted RHIs > **Default RHI**                                                       | "Default"                    | "DirectX 12"                 |
 >
 > *enabling Lumen automatically enables several settings that I've omitted from the above list because they match once lumen is enabled.
 
