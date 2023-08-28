@@ -7,7 +7,7 @@ TODO
 
 In Progress
 -----------
-- [ ] .
+- [ ] fix ipsum on the installer welcome page
 
 Done ✓
 ------
