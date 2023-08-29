@@ -88,8 +88,8 @@ In the launcher based version:
 | Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method**                    | "None"*                      | "Lumen"                      |
 | Engine > Rendering > Shadows > **Shadow Map Method**                                                 | "Shadow Maps"                | "VIrtual Shadow Maps (beta)" |
 | Engine > Rendering > Default Settings > **Extend default luminance range in Auto Exposure settings** | disabled                     | enabled                      |
-| Platforms > Windows > D3D12 Targeted Shader Formats > **SM5**                                        | enabled                      | diabled                      |
-| Platforms > Windows > D3D12 Targeted Shader Formats > **SM6**                                        | diabled                      | enabled                      |
+| Platforms > Windows > D3D12 Targeted Shader Formats > **SM5**                                        | enabled                      | disabled                     |
+| Platforms > Windows > D3D12 Targeted Shader Formats > **SM6**                                        | disabled                     | enabled                      |
 | Platforms > Windows Targeted RHIs > **Default RHI**                                                  | "Default"                    | "DirectX 12"                 |
 
 > *enabling Lumen automatically enables several settings that I've omitted from the above list because they match once lumen is enabled.
