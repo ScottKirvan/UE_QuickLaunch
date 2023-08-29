@@ -1,17 +1,10 @@
-About Whiteboard
-================
-
 > **Note**
+> # About Whiteboard
 > A whiteboard is a temporary spot that notes are jotted down and then
 erased.  Use it for things like brainstorming, ideation, offloading, etc.
 These notes are ***not*** important and can be erased at any time.
 
-I'm walking away from this project for a few days.  Here's some links I
-had open while working on the installer, and that may help when I come
-back to this:
-
--
-https://github.com/wixtoolset/wix/blob/e29b4aacf89ce060509b20a5f81df200f7d2fbc1/src/ext/UI/wixlib/WixUI_InstallDir.wxs
+- https://github.com/wixtoolset/wix/blob/e29b4aacf89ce060509b20a5f81df200f7d2fbc1/src/ext/UI/wixlib/WixUI_InstallDir.wxs
 	- This is the wix extension code for the InstallDialog - I was
 	able to kind of understand what was needed by just digging into
 	this source.
