@@ -1,13 +1,11 @@
 TODO
 ----
 - [ ] implement better error handling - there's still some characters that are invalid in UE project files
-- [ ] switch Statement using 'call' - for handling of type of context click and for errors - #someday/maybe
-- [ ] simplify code by setting up var strings before doing the actual work - #someday/maybe
 
 
 In Progress
 -----------
-- [ ] fix ipsum on the installer welcome page
+- [ ]  .
 
 Done ✓
 ------
@@ -21,8 +19,11 @@ Done ✓
 - [x] use at your own risk
 - [x] check filename for spaces
 - [x] roll this into a standard windows installer
+- [x] fix ipsum on the installer welcome page
 
 
 Not Gonna Do ✓
 ------
-- [x] something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
+- [ ] something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
+- [ ] switch Statement using 'call' - for handling of type of context click and for errors - #someday/maybe
+- [ ] simplify code by setting up var strings before doing the actual work - #someday/maybe
