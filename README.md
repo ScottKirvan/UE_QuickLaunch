@@ -82,6 +82,7 @@ In the launcher based version:
 >
 > - The following Project Settings are  changed:
 >
+
 | >                                                                                                    | Setting                      | **QuickLaunch** Project      | Launcher Blank Game |
 | ---------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------- |
 | Project > Target Hardware > **Optimize project settings for**                                        | "Unspecified", "Unspecified" | "Desktop", "Maximum"         |
@@ -91,7 +92,7 @@ In the launcher based version:
 | Platforms > Windows > D3D12 Targeted Shader Formats > **SM5**                                        | enabled                      | diabled                      |
 | Platforms > Windows > D3D12 Targeted Shader Formats > **SM6**                                        | diabled                      | enabled                      |
 | Platforms > Windows Targeted RHIs > **Default RHI**                                                  | "Default"                    | "DirectX 12"                 |
->
+
 > *enabling Lumen automatically enables several settings that I've omitted from the above list because they match once lumen is enabled.
 
 The **QuickLauncher** project ends up being a just barely lighter starting point then a default Launcher based project, but it's pretty quick and easy to match those settings if needed.  
