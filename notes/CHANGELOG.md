@@ -6,7 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- user can now select install directory during install
 ## [Released]
+## [2.0.1] - 2023-08-26
+### Fixed
+- MSI installer depended on a .cab file that wasn't downloaded with the release.  The cab is now embedded in the MSI file.
+
 ## [2.0.0] - 2023-08-16
 ### Added
 - added an MSI installer
