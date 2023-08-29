@@ -7,14 +7,9 @@
       <ComponentGroupRef Id="MainComponents" />
     </Feature>
     <MediaTemplate EmbedCab="yes" />
-    <!--
-    <UI>
-      <UIRef Id="WixUI_Advanced" />
-    </UI>
-    -->
     
    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
-   
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
    <ui:WixUI Id="WixUI_InstallDir" />
   </Package>
 </Wix>
