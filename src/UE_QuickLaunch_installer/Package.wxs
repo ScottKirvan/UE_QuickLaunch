@@ -1,4 +1,5 @@
-﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
   <Package Name="UE_QuickLaunch" Manufacturer="SKVFX" Version="2.0.0.0" UpgradeCode="5841e624-2d30-4a43-9d17-ac613df29903">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
@@ -6,5 +7,9 @@
       <ComponentGroupRef Id="MainComponents" />
     </Feature>
     <MediaTemplate EmbedCab="yes" />
+    
+   <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+   <ui:WixUI Id="WixUI_InstallDir" />
   </Package>
 </Wix>
