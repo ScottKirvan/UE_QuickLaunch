@@ -1,9 +1,8 @@
 
-# About Whiteboard
+About Whiteboard
+=============
 > **Note**
-> A whiteboard is a temporary spot that notes are jotted down and then erased.  
-> These notes are not important and can be erased at any time.
-
+> A whiteboard is a temporary spot that notes are jotted down and then erased.  Use it for things like brainstorming, ideation, offloading, etc.  These notes are ***not*** important and can be erased at any time.
 
 I'm walking away from this project for a few days.  Here's some links I had open while working on the installer, and that may help when I come back to this:
 
