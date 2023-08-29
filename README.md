@@ -97,7 +97,7 @@ The **QuickLauncher** project ends up being a just barely lighter starting point
 
 ## How it works
 
-At it's core, this works by adding some registry hooks that launches a simple batch file.  I've written up a short document [here](notes/Registry%20Notes.md).
+At it's core, this works by adding some registry hooks that launches a simple batch file.  I've written up a short document outlining the registry changes [here](notes/Registry%20Notes.md).
 
 ## Credits
 **Copyright (c) (2023):** [Scott Kirvan](https://github.com/ScottKirvan)  - All rights reserved   
