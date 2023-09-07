@@ -63,7 +63,6 @@ if "%projectName:~0,1%"=="9" Set projectName=UE_%projectName%
 REM if first character in projectName is an underscore, prepend projectName with UE
 if "%projectName:~0,1%"=="_" Set projectName=UE%projectName%
 
-set iconpath=%iconpath:\=\\%bin\\skvfximageres.dll,0
 echo.targetDir is: %targetDir%
 echo.projectName is: %projectName%
 echo.mode is: %mode%
