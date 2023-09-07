@@ -17,7 +17,7 @@ IF NOT "%mode%"=="ON_FOLDER" IF NOT "%mode%"=="IN_FOLDER" echo The mode argument
 For %%A in ("%targetDir%") do (
     Set projectName=%%~nxA
 )
-echo ProjectName befoe cleanup: %projectName%
+echo ProjectName before cleanup: %projectName%
 
 REM replace spaces with underscores in projectName
 Set projectName=%projectName: =_%
