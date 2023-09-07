@@ -42,11 +42,7 @@ Set projectName=%projectName:@=_%
 REM replace number signs with underscores in projectName
 Set projectName=%projectName:#=_%
 REM replace dollar signs with underscores in projectName
-REM Set projectName=%projectName:$=_%
-REM replace percent signs with underscores in projectName
-REM Set projectName=%projectName:%%=_%
-REM replace caret signs with underscores in projectName
-REM Set projectName=%projectName:^=_%
+Set projectName=%projectName:$=_%
 REM if first character in projectName is a any number, prepend projectName with the UE_
 if "%projectName:~0,1%"=="0" Set projectName=UE_%projectName%
 if "%projectName:~0,1%"=="1" Set projectName=UE_%projectName%
