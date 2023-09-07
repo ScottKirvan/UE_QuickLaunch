@@ -3,7 +3,14 @@ SET targetDir=%~1
 SET mode=%~2
 set "sourceDir=%~dp0"
 ECHO %~n0 was called with the following arguments: %targetDir% %mode% %sourceDir%
-IF NOT DEFINED targetDir GOTO END
+
+IF NOT DEFINED targetDir GOTO ERROR
+IF NOT DEFINED mode GOTO ERROR
+IF NOT DEFINED sourceDir GOTO ERROR
+REM check if targetDir exists
+if not exist "%targetDir%" echo The target directory does not exist, aborting. && goto ERROR
+REM check if mode is either "ON_FOLDER" or "IN_FOLDER"
+IF NOT "%mode%"=="ON_FOLDER" IF NOT "%mode%"=="IN_FOLDER" echo The mode argument must be either "ON_FOLDER" or "IN_FOLDER", aborting. && goto ERROR
 
 For %%A in ("%targetDir%") do (
     REM Set Folder=%%~dpA
@@ -120,10 +127,25 @@ REM my muscle memory will make me do this, also launch
 REM when you've selected this by right clicking directly on a 
 REM uproject file
 REM NOTE:  this callback isn't registered during install, so it will never get called
+<<<<<<< HEAD
+REM NOTE:  I had installed this, but it conflicted with Unreal's own registry entries.
+REM if %mode%==ON_UPROJECT (
+REM    echo.Launching: "%projectName%"
+REM    start "" "%projectName%"
+REM )
+
+goto END
+
+:ERROR
+echo An error occurred.
+REM Pause here so the user can see the errors.
+PAUSE
+=======
 REM if %mode%==ON_UPROJECT (
 REM     echo.Launching: "%projectName%"
 REM     start "" "%projectName%"
 REM )
+>>>>>>> 2b7fffe72bf17ba4b0fedbbeac7b89eb240c3247
 
 :END
 REM PAUSE
