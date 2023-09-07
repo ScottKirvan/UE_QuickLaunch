@@ -139,4 +139,4 @@ PAUSE
 :END
 endLocal
 
-PAUSE
+REM PAUSE
