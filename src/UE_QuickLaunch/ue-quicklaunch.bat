@@ -73,7 +73,7 @@ if %mode%==IN_FOLDER (
     REM Check if the "ue_project_template" folder exists in sourceDir
     if exist "%sourceDir%\ue_project_template\" (
         REM if it exists, copy it to the targetDir
-        echo The "ue_project_template" folder exists in "%sourceDir%"
+        echo The "ue_project_template" folder exists in "%sourceDir%" - copying files
         
         REM Copy the contents of "ue_project_template" folder to targetDir recursively
         REM /E - copy all subfolders and files including empty ones
@@ -86,7 +86,7 @@ if %mode%==IN_FOLDER (
 
     ) else (
         REM Template folder does not exist, so create the uproject file
-        echo The "ue_project_template" folder does not exist in "%batchDir%"
+        echo The "ue_project_template" folder does not exist in "%sourceDir%", creating new uproject file.
 
         if not EXIST "%projectName%.uproject" (
             echo { "FileVersion": 3 } > "%projectName%.uproject"
@@ -105,7 +105,7 @@ if %mode%==ON_FOLDER (
     REM Check if the "ue_project_template" folder exists in sourceDir
     if exist "%sourceDir%\ue_project_template\" (
         REM if it exists, copy it to the targetDir
-        echo The "ue_project_template" folder exists in "%sourceDir%"
+        echo The "ue_project_template" folder exists in "%sourceDir%" - copying files
         
         REM Copy the contents of "ue_project_template" folder to targetDir recursively
         REM /E - copy all subfolders and files including empty ones
@@ -119,6 +119,8 @@ if %mode%==ON_FOLDER (
 
     ) else (
         REM Template folder does not exist, so create the uproject file
+        echo The "ue_project_template" folder does not exist in "%sourceDir%", creating new uproject file.
+
         if not EXIST "%targetDir%\%projectName%.uproject" (
             echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
         )
