@@ -72,6 +72,7 @@ REM this works for the clicking inside the folder bit
 if %mode%==IN_FOLDER (
     REM Check if the "ue_project_template" folder exists in sourceDir
     if exist "%sourceDir%\ue_project_template\" (
+        REM if it exists, copy it to the targetDir
         echo The "ue_project_template" folder exists in "%sourceDir%"
         
         REM Copy the contents of "ue_project_template" folder to targetDir recursively
@@ -84,6 +85,7 @@ if %mode%==IN_FOLDER (
         ren "ue_project_template.uproject" "%projectName%.uproject"
 
     ) else (
+        REM Template folder does not exist, so create the uproject file
         echo The "ue_project_template" folder does not exist in "%batchDir%"
 
         if not EXIST "%projectName%.uproject" (
@@ -102,6 +104,7 @@ REM just open it, else, create, then open it.
 if %mode%==ON_FOLDER (
     REM Check if the "ue_project_template" folder exists in sourceDir
     if exist "%sourceDir%\ue_project_template\" (
+        REM if it exists, copy it to the targetDir
         echo The "ue_project_template" folder exists in "%sourceDir%"
         
         REM Copy the contents of "ue_project_template" folder to targetDir recursively
@@ -115,6 +118,7 @@ if %mode%==ON_FOLDER (
         ren "%targetDir%\ue_project_template.uproject" "%projectName%.uproject"
 
     ) else (
+        REM Template folder does not exist, so create the uproject file
         if not EXIST "%targetDir%\%projectName%.uproject" (
             echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
         )
@@ -122,17 +126,6 @@ if %mode%==ON_FOLDER (
     echo.Launching "%targetDir%\%projectName%.uproject"
     start "" "%targetDir%\%projectName%.uproject"
 )
-
-REM and, to round out the feature set, and because I know
-REM my muscle memory will make me do this, also launch 
-REM when you've selected this by right clicking directly on a 
-REM uproject file
-REM NOTE:  this callback isn't registered during install, so it will never get called
-REM NOTE:  I had installed this, but it conflicted with Unreal's own registry entries.
-REM if %mode%==ON_UPROJECT (
-REM    echo.Launching: "%projectName%"
-REM    start "" "%projectName%"
-REM )
 
 goto END
 
