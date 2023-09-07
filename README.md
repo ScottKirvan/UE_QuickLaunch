@@ -45,10 +45,11 @@
 ## Installation and basic usage
 Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will show the `QuickLaunch Unreal Engine here` menu item. 
 
-![happy_family](notes/images/happy_family.png)
+![](notes/images/Pasted%20image%2020230907163347.png)
 
 If you have multiple versions of Unreal Engine installed, a dialog will pop up asking what version of Unreal to use when creating the new project.
 
+![](notes/images/Pasted%20image%2020230907163215.png)
 
 ## Building from source
 

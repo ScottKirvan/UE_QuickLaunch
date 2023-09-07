@@ -1,6 +1,5 @@
 TODO
 ----
-- [ ] implement better error handling - there's still some characters that are invalid in UE project files
 
 
 In Progress
@@ -20,6 +19,8 @@ Done ✓
 - [x] check filename for spaces
 - [x] roll this into a standard windows installer
 - [x] fix ipsum on the installer welcome page
+- [x] implement better error handling - there's still some characters that are invalid in UE project files
+
 
 
 Not Gonna Do ✓
