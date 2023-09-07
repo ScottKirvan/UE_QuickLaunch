@@ -1,4 +1,6 @@
 @ECHO OFF
+setLocal
+
 SET targetDir=%~1
 SET mode=%~2
 set "sourceDir=%~dp0"
@@ -13,9 +15,10 @@ REM check if mode is either "ON_FOLDER" or "IN_FOLDER"
 IF NOT "%mode%"=="ON_FOLDER" IF NOT "%mode%"=="IN_FOLDER" echo The mode argument must be either "ON_FOLDER" or "IN_FOLDER", aborting. && goto ERROR
 
 For %%A in ("%targetDir%") do (
-    REM Set Folder=%%~dpA
     Set projectName=%%~nxA
 )
+echo ProjectName befoe cleanup: %projectName%
+
 REM replace spaces with underscores in projectName
 Set projectName=%projectName: =_%
 REM replace decimal points with underscores in projectName
@@ -46,24 +49,22 @@ REM replace percent signs with underscores in projectName
 REM Set projectName=%projectName:%%=_%
 REM replace caret signs with underscores in projectName
 REM Set projectName=%projectName:^=_%
-REM if first character in projectName is a any number, prepend projectName with the letter A
-if "%projectName:~0,1%"=="0" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="1" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="2" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="3" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="4" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="5" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="6" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="7" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="8" Set projectName=A%projectName%
-if "%projectName:~0,1%"=="9" Set projectName=A%projectName%
-REM if first character in projectName is an underscore, prepend projectName with the letter A
-if "%projectName:~0,1%"=="_" Set projectName=A%projectName%
-
+REM if first character in projectName is a any number, prepend projectName with the UE_
+if "%projectName:~0,1%"=="0" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="1" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="2" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="3" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="4" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="5" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="6" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="7" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="8" Set projectName=UE_%projectName%
+if "%projectName:~0,1%"=="9" Set projectName=UE_%projectName%
+REM if first character in projectName is an underscore, prepend projectName with UE
+if "%projectName:~0,1%"=="_" Set projectName=UE%projectName%
 
 set iconpath=%iconpath:\=\\%bin\\skvfximageres.dll,0
 echo.targetDir is: %targetDir%
-REM echo.Folder is: %Folder%
 echo.projectName is: %projectName%
 echo.mode is: %mode%
 
@@ -127,7 +128,6 @@ REM my muscle memory will make me do this, also launch
 REM when you've selected this by right clicking directly on a 
 REM uproject file
 REM NOTE:  this callback isn't registered during install, so it will never get called
-<<<<<<< HEAD
 REM NOTE:  I had installed this, but it conflicted with Unreal's own registry entries.
 REM if %mode%==ON_UPROJECT (
 REM    echo.Launching: "%projectName%"
@@ -140,13 +140,8 @@ goto END
 echo An error occurred.
 REM Pause here so the user can see the errors.
 PAUSE
-=======
-REM if %mode%==ON_UPROJECT (
-REM     echo.Launching: "%projectName%"
-REM     start "" "%projectName%"
-REM )
->>>>>>> 2b7fffe72bf17ba4b0fedbbeac7b89eb240c3247
 
 :END
+endLocal
 REM PAUSE
 
