@@ -62,22 +62,21 @@ echo.mode is: %mode%
 
 REM this works for the clicking inside the folder bit
 if %mode%==IN_FOLDER (
-    
-    REM Check if the "template" folder exists in sourceDir
-    if exist "%sourceDir%\template\" (
-        echo The "template" folder exists in "%sourceDir%"
+    REM Check if the "ue_project_template" folder exists in sourceDir
+    if exist "%sourceDir%\ue_project_template\" (
+        echo The "ue_project_template" folder exists in "%sourceDir%"
         
-        REM Copy the contents of "template" folder to targetDir recursively
+        REM Copy the contents of "ue_project_template" folder to targetDir recursively
         REM /E - copy all subfolders and files including empty ones
         REM /Y - suppress prompting to confirm you want to overwrite an existing destination file
         REM /C - continue copying even if errors occur (e.g. file already exists in destination, but since we can't confirm overwite, we will skip it)
-        xcopy "%sourceDir%\template\" "%targetDir%\" /E /Y /C
+        xcopy "%sourceDir%\ue_project_template\" "%targetDir%\" /E /Y /C
 
         REM Rename the uproject file
-        ren "template.uproject" "%projectName%.uproject"
+        ren "ue_project_template.uproject" "%projectName%.uproject"
 
     ) else (
-        echo The "template" folder does not exist in "%batchDir%"
+        echo The "ue_project_template" folder does not exist in "%batchDir%"
 
         if not EXIST "%projectName%.uproject" (
             echo { "FileVersion": 3 } > "%projectName%.uproject"
@@ -93,8 +92,24 @@ REM this is for the click on the folder name version
 REM if there's already a name-matched uproject file in this folder, 
 REM just open it, else, create, then open it.
 if %mode%==ON_FOLDER (
-    if not EXIST "%targetDir%\%projectName%.uproject" (
-        echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
+    REM Check if the "ue_project_template" folder exists in sourceDir
+    if exist "%sourceDir%\ue_project_template\" (
+        echo The "ue_project_template" folder exists in "%sourceDir%"
+        
+        REM Copy the contents of "ue_project_template" folder to targetDir recursively
+        REM /E - copy all subfolders and files including empty ones
+        REM /Y - suppress prompting to confirm you want to overwrite an existing destination file
+        REM /C - continue copying even if errors occur (e.g. file already exists in destination, but since we can't confirm overwite, we will skip it)
+        xcopy "%sourceDir%\ue_project_template\" "%targetDir%\" /E /Y /C
+
+        REM Rename the uproject file
+        echo ren "%targetDir%\ue_project_template.uproject" "%projectName%.uproject"
+        ren "%targetDir%\ue_project_template.uproject" "%projectName%.uproject"
+
+    ) else (
+        if not EXIST "%targetDir%\%projectName%.uproject" (
+            echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
+        )
     )
     echo.Launching "%targetDir%\%projectName%.uproject"
     start "" "%targetDir%\%projectName%.uproject"
@@ -105,10 +120,10 @@ REM my muscle memory will make me do this, also launch
 REM when you've selected this by right clicking directly on a 
 REM uproject file
 REM NOTE:  this callback isn't registered during install, so it will never get called
-if %mode%==ON_UPROJECT (
-    echo.Launching: "%projectName%"
-    start "" "%projectName%"
-)
+REM if %mode%==ON_UPROJECT (
+REM     echo.Launching: "%projectName%"
+REM     start "" "%projectName%"
+REM )
 
 :END
-PAUSE
+REM PAUSE
