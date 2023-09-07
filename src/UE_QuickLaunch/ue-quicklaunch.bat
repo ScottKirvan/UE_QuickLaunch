@@ -31,8 +31,6 @@ REM replace parentheses with underscores in projectName
 Set projectName=%projectName:(=_%
 REM replace parentheses with underscores in projectName
 Set projectName=%projectName:)=_%
-REM replace ampersands with underscores in projectName
-REM Set projectName=%projectName:&=_%
 REM replace apostrophes with underscores in projectName
 Set projectName=%projectName:'=_%
 REM replace commas with underscores in projectName
@@ -141,4 +139,4 @@ PAUSE
 :END
 endLocal
 
-REM PAUSE
+PAUSE
