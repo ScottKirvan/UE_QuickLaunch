@@ -24,6 +24,6 @@ Done ✓
 
 Not Gonna Do ✓
 ------
-- [ ] something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
-- [ ] switch Statement using 'call' - for handling of type of context click and for errors - #someday/maybe
-- [ ] simplify code by setting up var strings before doing the actual work - #someday/maybe
+- [x] something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
+- [x] switch Statement using 'call' - for handling of type of context click and for errors - #someday/maybe
+- [x] simplify code by setting up var strings before doing the actual work - #someday/maybe
