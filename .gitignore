@@ -18,3 +18,4 @@ src/UE_QuickLaunch/x64/*
 src/UE_QuickLaunch_installer/bin/*
 src/UE_QuickLaunch_installer/obj/*
 src/UpgradeLog.htm
+src/UE_QuickLaunch/skvfximageres.dll
