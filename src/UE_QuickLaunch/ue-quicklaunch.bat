@@ -86,9 +86,10 @@ if %mode%==IN_FOLDER (
 
     ) else (
         REM Template folder does not exist, so create the uproject file
-        echo The "ue_project_template" folder does not exist in "%sourceDir%", creating new uproject file.
+        echo The "ue_project_template" folder does not exist in "%sourceDir%"
 
         if not EXIST "%projectName%.uproject" (
+            echo Creating new uproject file.
             echo { "FileVersion": 3 } > "%projectName%.uproject"
         )
     )
@@ -119,9 +120,10 @@ if %mode%==ON_FOLDER (
 
     ) else (
         REM Template folder does not exist, so create the uproject file
-        echo The "ue_project_template" folder does not exist in "%sourceDir%", creating new uproject file.
+        echo The "ue_project_template" folder does not exist in "%sourceDir%"
 
         if not EXIST "%targetDir%\%projectName%.uproject" (
+            echo Creating new uproject file.
             echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
         )
     )
@@ -138,5 +140,6 @@ PAUSE
 
 :END
 endLocal
+
 REM PAUSE
 
