@@ -47,6 +47,8 @@ Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/
 
 ![](notes/images/Pasted%20image%2020230907163347.png)
 
+If you don't see this context menu when you right-click in the folder, it may be because you're using Windows 11.  Windows 11 introduced a new right-click context menu
+
 If you have multiple versions of Unreal Engine installed, a dialog will pop up asking what version of Unreal to use when creating the new project.
 
 ![](notes/images/Pasted%20image%2020230907163215.png)
@@ -70,8 +72,8 @@ No launcher.  No template browser.  No waiting.  Just one click to sweet, sweet 
 
 ### Other Usage Scenarios
 
-- **Click _IN_ FOLDER**:  You can use the right-click context menu by clicking within any folder, or by clicking *on* a folder -- this works in file explorer and on desktop folders.  If a project already exists within the folder, that project will be opened.
-- **CLICK _ON_ FOLDER**:  You can right-click and select **QuickLaunch** on a folder name, to create or open an unreal project without having to navigate into the folder -- right-click context works on the left side Navigation Pane in File Explorer too, so you don't need to navigate away from a folder you may already be working in.
+- **Click _IN_ A FOLDER**:  You can use the right-click context menu by clicking within any folder, or by clicking *on* a folder -- this works in file explorer and on desktop folders.  If a project already exists within the folder, that project will be opened.
+- **CLICK _ON_ A FOLDER**:  You can right-click and select **QuickLaunch** on a folder name, to create or open an unreal project without having to navigate into the folder -- right-click context works on the left side Navigation Pane in File Explorer too, so you don't need to navigate away from a folder you may already be working in.
 - **LAUNCH MULTIPLE PROJECTS**: You can use this to rapidly launch multiple projects at once without having to navigate around looking for them.  For example, say you have multiple projects in their own folders within a subfolder in file explorer, and you need them  all open at once to compare project settings.  Just right click on each folder and launch the projects without having to navigate in and out of folders within File Explorer (and forgetting which project you already launched when it's time to navigate to and launch that third project)
 - **QUICKLY GRAB AN ASSET PACK**:  Say you have an asset pack that you need to get something out of, but no unreal project.  Usually the process is go into the Games Launcher (_wait for it to fire up_), navigate to the Library panel (_wait for all the engine versions to get registered_), launch the unreal engine version you want (_wait for the template browser to come up_), navigate from the default template browser screen to the simple blank project you need, select it, use the browse button to navigate to where you want to put it, choose a name -- that name's already used, so you pick another.  Now click launch, wait for unreal to start, and go back to the marketplace asset pack you needed (_assuming you haven't already gotten distracted and forgotten why you even started down this path_). Open it up and select your project... but, that asset pack doesn't support the engine version you launched, so start all over.....  With **QuickLaunch*, you open the epic games launcher to find which asset pack you need, and while you process that purchase from the store, create a folder, right click, and pick your engine ver... oh, wait... what version does the asset pack need?  Check that, right-click, launch Unreal, and as soon is it's fired up, download that asset pack.  :-)  
 
