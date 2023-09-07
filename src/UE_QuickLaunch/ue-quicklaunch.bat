@@ -22,7 +22,7 @@ echo ProjectName before cleanup: %projectName%
 REM replace spaces with underscores in projectName
 Set projectName=%projectName: =_%
 REM replace decimal points with underscores in projectName
-REM Set projectName=%projectName:.=_% 
+Set projectName=%projectName:.=_%
 REM replace hyphens with underscores in projectName
 Set projectName=%projectName:-=_%
 REM replace plus signs with underscores in projectName
@@ -142,4 +142,3 @@ PAUSE
 endLocal
 
 REM PAUSE
-
