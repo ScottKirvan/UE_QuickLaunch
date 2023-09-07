@@ -11,7 +11,7 @@ For %%A in ("%targetDir%") do (
 )
 REM replace spaces with underscores in projectName
 Set projectName=%projectName: =_%
-REM :: replace decimal points with underscores in projectName
+REM replace decimal points with underscores in projectName
 REM Set projectName=%projectName:.=_% 
 REM replace hyphens with underscores in projectName
 Set projectName=%projectName:-=_%
@@ -62,10 +62,30 @@ echo.mode is: %mode%
 
 REM this works for the clicking inside the folder bit
 if %mode%==IN_FOLDER (
-    if not EXIST "%projectName%.uproject" (
-        echo { "FileVersion": 3 } > "%projectName%.uproject"
+    
+    REM Check if the "template" folder exists in sourceDir
+    if exist "%sourceDir%\template\" (
+        echo The "template" folder exists in "%sourceDir%"
+        
+        REM Copy the contents of "template" folder to targetDir recursively
+        REM /E - copy all subfolders and files including empty ones
+        REM /Y - suppress prompting to confirm you want to overwrite an existing destination file
+        REM /C - continue copying even if errors occur (e.g. file already exists in destination, but since we can't confirm overwite, we will skip it)
+        xcopy "%sourceDir%\template\" "%targetDir%\" /E /Y /C
+
+        REM Rename the uproject file
+        ren "template.uproject" "%projectName%.uproject"
+
+    ) else (
+        echo The "template" folder does not exist in "%batchDir%"
+
+        if not EXIST "%projectName%.uproject" (
+            echo { "FileVersion": 3 } > "%projectName%.uproject"
+        )
     )
+
     echo.Launching: "%projectName%.uproject"
+
     start "" "%projectName%.uproject"
 )
 
