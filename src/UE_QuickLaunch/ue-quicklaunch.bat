@@ -64,23 +64,23 @@ echo.mode is: %mode%
 
 REM this works for the clicking inside the folder bit
 if %mode%==IN_FOLDER (
-    REM Check if the "ue_project_template" folder exists in sourceDir
-    if exist "%sourceDir%\ue_project_template\" (
+    REM Check if the "ue_quicklaunch_template" folder exists in sourceDir
+    if exist "%sourceDir%\ue_quicklaunch_template\" (
         REM if it exists, copy it to the targetDir
-        echo The "ue_project_template" folder exists in "%sourceDir%" - copying files
+        echo The "ue_quicklaunch_template" folder exists in "%sourceDir%" - copying files
         
-        REM Copy the contents of "ue_project_template" folder to targetDir recursively
+        REM Copy the contents of "ue_quicklaunch_template" folder to targetDir recursively
         REM /E - copy all subfolders and files including empty ones
         REM /Y - suppress prompting to confirm you want to overwrite an existing destination file
         REM /C - continue copying even if errors occur (e.g. file already exists in destination, but since we can't confirm overwite, we will skip it)
-        xcopy "%sourceDir%\ue_project_template\" "%targetDir%\" /E /Y /C
+        xcopy "%sourceDir%\ue_quicklaunch_template\" "%targetDir%\" /E /Y /C
 
         REM Rename the uproject file
-        ren "ue_project_template.uproject" "%projectName%.uproject"
+        ren "ue_quicklaunch_template.uproject" "%projectName%.uproject"
 
     ) else (
         REM Template folder does not exist, so create the uproject file
-        echo The "ue_project_template" folder does not exist in "%sourceDir%"
+        echo The "ue_quicklaunch_template" folder does not exist in "%sourceDir%"
 
         if not EXIST "%projectName%.uproject" (
             echo Creating new uproject file.
@@ -97,24 +97,24 @@ REM this is for the click on the folder name version
 REM if there's already a name-matched uproject file in this folder, 
 REM just open it, else, create, then open it.
 if %mode%==ON_FOLDER (
-    REM Check if the "ue_project_template" folder exists in sourceDir
-    if exist "%sourceDir%\ue_project_template\" (
+    REM Check if the "ue_quicklaunch_template" folder exists in sourceDir
+    if exist "%sourceDir%\ue_quicklaunch_template\" (
         REM if it exists, copy it to the targetDir
-        echo The "ue_project_template" folder exists in "%sourceDir%" - copying files
+        echo The "ue_quicklaunch_template" folder exists in "%sourceDir%" - copying files
         
-        REM Copy the contents of "ue_project_template" folder to targetDir recursively
+        REM Copy the contents of "ue_quicklaunch_template" folder to targetDir recursively
         REM /E - copy all subfolders and files including empty ones
         REM /Y - suppress prompting to confirm you want to overwrite an existing destination file
         REM /C - continue copying even if errors occur (e.g. file already exists in destination, but since we can't confirm overwite, we will skip it)
-        xcopy "%sourceDir%\ue_project_template\" "%targetDir%\" /E /Y /C
+        xcopy "%sourceDir%\ue_quicklaunch_template\" "%targetDir%\" /E /Y /C
 
         REM Rename the uproject file
-        echo ren "%targetDir%\ue_project_template.uproject" "%projectName%.uproject"
-        ren "%targetDir%\ue_project_template.uproject" "%projectName%.uproject"
+        echo ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
+        ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
 
     ) else (
         REM Template folder does not exist, so create the uproject file
-        echo The "ue_project_template" folder does not exist in "%sourceDir%"
+        echo The "ue_quicklaunch_template" folder does not exist in "%sourceDir%"
 
         if not EXIST "%targetDir%\%projectName%.uproject" (
             echo Creating new uproject file.
