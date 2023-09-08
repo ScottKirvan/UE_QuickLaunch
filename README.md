@@ -64,11 +64,13 @@ If you, like me, always enable the same bunch of plugins and project settings ev
 
 ## Template project
 
-UE_QuickLaunch v2.1 introduces the ability to use a template project rather than the default [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8).  This gives you the ability to fully customize the type of project created by QuickLaunch.  
+UE_QuickLaunch v2.1 introduces the ability to use a template project rather than the default [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8).  This gives you the ability to fully customize the type of project created by QuickLaunch.  
 
-To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory.  You can put anything you want into the template folder and its contents will be used to create your new project.  
+To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory (ie. `C:\Program Files\UE_QuickLaunch`).  You can put anything you want into the template folder and its contents will be used to create your new project.  
 
-To created a template uproject file, add an unreal `uproject` file  to the root of the template folder and name it `ue_quicklaunch_template.uproject`. This file will be copied in and renamed to match your project's name.  When you launch a new project with your template, the contents of the uproject file will determine which version of Unreal Engine is launched (and which plugins are enabled).  If you edit the uproject file and delete the line that specifies the Unreal version, rather than launching a specific version of Unreal, you'll be presented with the **Select Unreal Engine Version** dialog. 
+To created a template Unreal Project (`uproject`) file, copy an unreal `uproject` file  to the root of the template folder and name it `ue_quicklaunch_template.uproject`. QuickLaunch will copy and rename the file to match your project's name.  
+
+When you launch a new project with your template, the contents of the uproject file will determine which version of Unreal Engine is launched (and which plugins are enabled).  If you edit the uproject file and delete the line that specifies the Unreal version, rather than launching a specific version of Unreal, you'll be presented with the **Select Unreal Engine Version** dialog. 
 
 > **Warning**
 > **Supporting Multiple Unreal Versions:**
