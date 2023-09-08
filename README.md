@@ -43,7 +43,7 @@
 
 **UE_QuickLaunch** is a right-click Unreal Engine project creator/launcher for Windows File Explorer. Right-click on or in a folder, and quickly create a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) with the same name as the folder. If an unreal project file already exists, QuickLaunch just opens it.
 ## Installation and basic usage
-Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select `QuickLaunch Unreal Engine here` to create a new project and launch Unreal Engine. 
+Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select **QuickLaunch Unreal Engine here** to create a new project and launch Unreal Engine. 
 
 ![](notes/images/Pasted%20image%2020230907163347.png)
 
@@ -52,13 +52,13 @@ Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/
 >
 ![Windows-11-Right-Click-Menu-Show-More-Options](notes/images/Windows-11-Right-Click-Menu-Show-More-Options.jpg)
 > 
-> If you wish, you can configure Windows 11 to use the 'Classic' or 'Legacy' version of the right-click context menu by following the instructions [here](https://pureinfotech.com/bring-back-classic-context-menu-windows-11/).  This is how I work.
+> If you wish, you can configure Windows 11 to use the _'Classic'_ or _'Legacy'_ version of the right-click context menu by following the instructions [here](https://pureinfotech.com/bring-back-classic-context-menu-windows-11/). 
 
 If you have multiple versions of Unreal Engine installed, a dialog will pop up asking what version of Unreal to launch when creating the new project.
 
 ![](notes/images/Pasted%20image%2020230907163215.png)
 
-This process creates and launches an Unreal project based on a [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to a new "Blank" project launched in UE4, but in UE5 there are some [differences you may want to be aware of](#Caveats).
+ creates and launches an Unreal project based on a [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to a new "Blank" project launched in UE4, but in UE5 there are some [differences you may want to be aware of](#Caveats).
 
 ## Template project
 
