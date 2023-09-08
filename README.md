@@ -43,7 +43,7 @@
 
 **UE_QuickLaunch** is a right-click Unreal Engine project creator/launcher for Windows File Explorer. Right-click on or in a folder, and quickly create a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) with the same name as the folder. If an unreal project file already exists, QuickLaunch just opens it.
 ## Installation and basic usage
-Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select `QuickLaunch Unreal Engine here` to launch Unreal Engine and automatically create your new. 
+Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select `QuickLaunch Unreal Engine here` to create a new project and launch Unreal Engine. 
 
 ![](notes/images/Pasted%20image%2020230907163347.png)
 
@@ -58,6 +58,7 @@ If you have multiple versions of Unreal Engine installed, a dialog will pop up a
 
 ![](notes/images/Pasted%20image%2020230907163215.png)
 
+This process creates and launches an Unreal project based on a [`minimal uproject`](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to a new "Blank" project launched in UE4, but in UE5 there are some differences you may want to be aware of.
 ## Building from source
 
 If you choose to build this from source, everything you need is packaged up as a **Microsoft Visual Studio Solution** in the `src` folder.  You'll need the Visual Studio **HeatWave** extension to build the installer itself.  See the additional notes in the src [README](src/README.md).
