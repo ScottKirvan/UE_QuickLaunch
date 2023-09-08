@@ -58,9 +58,10 @@ If you have multiple versions of Unreal Engine installed, a dialog will pop up a
 
 ![](notes/images/Pasted%20image%2020230907163215.png)
 
-This process creates and launches an Unreal project based on a [`minimal uproject`](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to a new "Blank" project launched in UE4, but in UE5 there are some [differences you may want to be aware of](#Caveats).
+This process creates and launches an Unreal project based on a [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to a new "Blank" project launched in UE4, but in UE5 there are some [differences you may want to be aware of](#Caveats).
 
-UE_QuickLaunch v2.1 introduces template projects, so you now have the ability to customize the startup QuickLaunch Unreal project.  To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch insallation directory and populate it with the project contents you want usedthe folder's contents will be used as a templateto create your new project.  The UE_QuickLauncher looks for the `ue_quicklaunch_folder` in it's install directory.  The template's `uproject` file should be named, `ue_quicklaunch_template.uproject`.   
+UE_QuickLaunch v2.1 introduces the ability to use a template project rather than just the Minimal uproject.  This gives you the ability to fully customize what's in your startup project.  To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch insallation directory.  The folder's contents will be used as a template to create your new project.  The template's uproject file should be called, `ue_quicklaunch_template.uproject`.  This file will be copied in and renamed to match your project's name.  Keep u
+
 ## Building from source
 
 If you choose to build this from source, everything you need is packaged up as a **Microsoft Visual Studio Solution** in the `src` folder.  You'll need the Visual Studio **HeatWave** extension to build the installer itself.  See the additional notes in the src [README](src/README.md).
