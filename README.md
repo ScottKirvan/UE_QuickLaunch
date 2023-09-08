@@ -68,10 +68,12 @@ UE_QuickLaunch v2.1 introduces the ability to use a template project rather than
 
 To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory.  You can put anything you want into the template folder adn its contents will be used as a template to create your new project.  
 
-To created a template uproject file, add an unreal `upro` `ue_quicklaunch_template.uproject` to the template folder.  The template's uproject file should be called, `ue_quicklaunch_template.uproject`.  This file will be copied in and renamed to match your project's name.  
+To created a template uproject file, add an unreal `uproject` file  to the root of the template folder and name it `ue_quicklaunch_template.uproject`. This file will be copied in and renamed to match your project's name.  When you launch a new project with your template, the contents of the uproject file will determine which version of Unreal Engine is launched (and which plugins are enabled).  If you edit the uproject file and delete the line that specifies the Unreal version, rather than launching a specific version of unreal, you'll be presented with the **Select Unreal Engine Version** dialog. 
 
 > **Warning**
-> When creating or using a template project, the contents have to be compatible with the version of Unreal you're launching.  For example, you may be able to create a template level in UE 4.27 and successfully launch it in UE 5.3, but trying to load a UE 5.3 asset into 4.27 will probably not work.  Also, when you create your template, the uproject file will determine which version of Unreal Engine is launched, _unless_ you edited the uproject file and delete the line that specifies the Unreal version.  Using config files and uproject files in different versions may produce some unexpected results, but seems relatively safe.  
+> When creating or using a template project, the contents have to be compatible with the version of Unreal you're launching.  For example, you may be able to create a template level in UE 4.27 and successfully launch it in UE 5.3, but trying to load a UE 5.3 asset into 4.27 will probably not work.  
+> 
+> Unlike asset files, loading config files and uproject files in different versions may produce some unexpected results, but seems relatively safe.  
 
 ## Building from source
 
