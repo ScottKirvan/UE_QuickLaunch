@@ -60,6 +60,8 @@ If you have multiple versions of Unreal Engine installed, a dialog will pop up a
 
 This process creates and launches an Unreal project based on a [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to a new "Blank" project launched in UE4, but in UE5 there are some [differences you may want to be aware of](#Caveats).
 
+## Template project
+
 UE_QuickLaunch v2.1 introduces the ability to use a template project rather than just the Minimal uproject.  This gives you the ability to fully customize the type of project created by QuickLaunch.  
 
 To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory.  The folder's contents will be used as a template to create your new project.  The template's uproject file should be called, `ue_quicklaunch_template.uproject`.  This file will be copied in and renamed to match your project's name.  
@@ -106,20 +108,22 @@ In the launcher based version:
 | Setting                                                                                              | **QuickLaunch** Project      | Launcher Blank Game          |
 | ---------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------- |
 | Project > Target Hardware > **Optimize project settings for**                                        | "Unspecified", "Unspecified" | "Desktop", "Maximum"         |
-| Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method**                    | "None"*                      | "Lumen"                      |
+| Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method**                    | "None"                      | "Lumen"*                      |
 | Engine > Rendering > Shadows > **Shadow Map Method**                                                 | "Shadow Maps"                | "VIrtual Shadow Maps (beta)" |
 | Engine > Rendering > Default Settings > **Extend default luminance range in Auto Exposure settings** | disabled                     | enabled                      |
 | Platforms > Windows > D3D12 Targeted Shader Formats > **SM5**                                        | enabled                      | disabled                     |
 | Platforms > Windows > D3D12 Targeted Shader Formats > **SM6**                                        | disabled                     | enabled                      |
 | Platforms > Windows Targeted RHIs > **Default RHI**                                                  | "Default"                    | "DirectX 12"                 |
 
-> *enabling Lumen automatically enables several settings that I've omitted from the above list because they match once lumen is enabled.
+> * *enabling Lumen automatically enables several settings that I've omitted from the above list because they match once lumen is enabled.
 
 The **QuickLauncher** project ends up being a just barely lighter starting point then a default Launcher based project, but it's pretty quick and easy to match those settings if needed.  
 
 ## Under the hood
 
-At it's core, QuickLaunch works by simply adding some registry hooks that launches a simple batch file.  I've written up a short document outlining the registry changes [here](notes/Registry%20Notes.md).
+At it's core, QuickLaunch works by simply adding some registry hooks that launch a batch file which stubs in your basic project (or template) and launches Unreal.  
+
+I've written up a short document outlining the registry changes [here](notes/Registry%20Notes.md).
 
 ## Credits
 **Copyright (c) (2023):** [Scott Kirvan](https://github.com/ScottKirvan)  - All rights reserved   
