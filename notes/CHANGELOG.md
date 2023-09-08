@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - user can now select target directory during install
 - added license text (MIT license) to installer
-- Now supports project templates:  Add a `ue_quicklaunch_template` folder and the folder's contents will be used as a templateto create your new project.  The UE_QuickLauncher looks for the `ue_quicklaunch_folder` in it's install directory.  The template's `uproject` file should be named, `ue_quicklaunch_template.uproject`.   
+- Now supports project templates:  Add a `ue_quicklaunch_template` folder and the folder's contents will be used as a template to create your new project.  The UE_QuickLauncher looks for the `ue_quicklaunch_folder` in it's install directory.  The template's `uproject` file should be named, `ue_quicklaunch_template.uproject`.   
 - By default, the installer now installs into a `UE_QuickLaunch` folder instead of `SKVFX UE_QuickLaunch`.
 - More robus error checking an correction of unsupported charcters in `uproject` filenames
 

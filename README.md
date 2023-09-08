@@ -31,8 +31,8 @@
 </p>
 
 <h4>
-    <a href="https://github.com/ScottKirvan/UE_QuickLaunch/">View Demo</a>
-  <span> · </span>
+    <!--<a href="https://github.com/ScottKirvan/UE_QuickLaunch/">View Demo</a>
+  <span> · </span>-->
     <a href="https://github.com/ScottKirvan/UE_QuickLaunch#readme">Documentation</a>
   <span> · </span>
     <a href="https://github.com/ScottKirvan/UE_QuickLaunch/issues/">Report Bug</a>
@@ -43,7 +43,7 @@
 
 **UE_QuickLaunch** is a right-click Unreal Engine project creator/launcher for Windows File Explorer. Right-click on or in a folder, and quickly create a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) with the same name as the folder. If an unreal project file already exists, QuickLaunch just opens it.
 ## Installation and basic usage
-Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select `QuickLaunch Unreal Engine here` to create a new project and launch Unreal Engine. 
+Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select **QuickLaunch Unreal Engine here** to create a new project and launch Unreal Engine. 
 
 ![](notes/images/Pasted%20image%2020230907163347.png)
 
@@ -52,22 +52,32 @@ Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/
 >
 ![Windows-11-Right-Click-Menu-Show-More-Options](notes/images/Windows-11-Right-Click-Menu-Show-More-Options.jpg)
 > 
-> If you wish, you can configure Windows 11 to use the 'Classic' or 'Legacy' version of the right-click context menu by following the instructions [here](https://pureinfotech.com/bring-back-classic-context-menu-windows-11/).  This is how I work.
+> If you wish, you can configure Windows 11 to use the _'Classic'_ or _'Legacy'_ version of the right-click context menu by following the instructions [here](https://pureinfotech.com/bring-back-classic-context-menu-windows-11/). 
 
 If you have multiple versions of Unreal Engine installed, a dialog will pop up asking what version of Unreal to launch when creating the new project.
 
 ![](notes/images/Pasted%20image%2020230907163215.png)
 
-This process creates and launches an Unreal project based on a [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to a new "Blank" project launched in UE4, but in UE5 there are some [differences you may want to be aware of](#Caveats).
+Clicking **OK** creates and launches an Unreal project based on a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) file.  The new project will be identical to creating a new UE4 "Blank" template project from the Launcher.  In UE5 there are some [differences you may want to be aware of](#Caveats).  
+
+If you, like me, always enable the same bunch of plugins and project settings every time you start a new Unreal project, you can save some manual project initialization steps and use a QuickLaunch [Template project](#Template%20project) instead. 
 
 ## Template project
 
-UE_QuickLaunch v2.1 introduces the ability to use a template project rather than just the Minimal uproject.  This gives you the ability to fully customize the type of project created by QuickLaunch.  
+UE_QuickLaunch v2.1 introduces the ability to use a template project rather than the default [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8).  This gives you the ability to fully customize the type of project created by QuickLaunch.  
 
-To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory.  The folder's contents will be used as a template to create your new project.  The template's uproject file should be called, `ue_quicklaunch_template.uproject`.  This file will be copied in and renamed to match your project's name.  
+To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory (ie. `C:\Program Files\UE_QuickLaunch`).  You can put anything you want into the template folder and its contents will be used to create your new project.  
+
+To created a template Unreal Project (`uproject`) file, copy an unreal `uproject` file  to the root of the template folder and name it `ue_quicklaunch_template.uproject`. QuickLaunch will copy and rename the file to match your project's name.  
+
+When you launch a new project with your template, the contents of the uproject file will determine which version of Unreal Engine is launched (and which plugins are enabled).  If you edit the uproject file and delete the line that specifies the Unreal version, rather than launching a specific version of Unreal, you'll be presented with the **Select Unreal Engine Version** dialog. 
 
 > **Warning**
-> When creating or using a template project, the contents have to be compatible with the version of Unreal you're launching.  For example, you may be able to create a template level in UE 4.27 and successfully launch it in UE 5.3, but trying to load a UE 5.3 asset into 4.27 will probably not work.  Also, when you create your template, the uproject file will determine which version of Unreal Engine is launched, _unless_ you edited the uproject file and delete the line that specifies the Unreal version.  Using config files and uproject files in different versions may produce some unexpected results, but seems relatively safe.  
+> **Multiple Unreal Versions:**
+> 
+> When creating or using a template project, the contents have to be compatible with the version of Unreal you're launching.  For example, you may be able to create a template map/level in UE 4.27 and successfully launch it in UE 5.3, but trying to load a UE 5.3 level asset into 4.27 will probably not work.  
+> 
+> Unlike asset files, loading config files and (`uproject`) files in different versions seems relatively benign.  Watch out for unusual behaviors.  In my experience I've not seen any problems, but be aware that what a setting does in one version of Unreal may provide a different behavior in another.  To be safe, generate your template project in the oldest version of Unreal that you tend to work in. 
 
 ## Building from source
 
@@ -79,19 +89,19 @@ If you choose to build this from source, everything you need is packaged up as a
 
 From within **File Explorer**
 
-1. create a **New Folder** ([CTRL+SHIFT+N]) -- rename this file to whatever you want your unreal project to be called.
-2. double click that folder to enter the new directory.
-3. right-click anywhere within that empty directory and select **QuickLaunch Unreal Engine from here**.
+1. create a **New Folder** ([CTRL+SHIFT+N]) -- name the folder whatever you want your unreal project to be called.
+3. double click that folder to enter the new directory.
+4. right-click anywhere within that empty directory and select **QuickLaunch Unreal Engine from here**.
 If you have more than one version of Unreal installed, you will be prompted to pick which version you wish to start, and Unreal will startup with a blank level open.
 
 No launcher.  No template browser.  No waiting.  Just one click to sweet, sweet engine-time!
 
 ### Other Usage Scenarios
 
-- **Click _IN_ A FOLDER**:  You can use the right-click context menu by clicking within any folder, or by clicking *on* a folder -- this works in file explorer and on desktop folders.  If a project already exists within the folder, that project will be opened.
-- **CLICK _ON_ A FOLDER**:  You can right-click and select **QuickLaunch** on a folder name, to create or open an unreal project without having to navigate into the folder -- right-click context works on the left side Navigation Pane in File Explorer too, so you don't need to navigate away from a folder you may already be working in.
-- **LAUNCH MULTIPLE PROJECTS**: You can use this to rapidly launch multiple projects at once without having to navigate around looking for them.  For example, say you have multiple projects in their own folders within a subfolder in file explorer, and you need them  all open at once to compare project settings.  Just right click on each folder and launch the projects without having to navigate in and out of folders within File Explorer (and forgetting which project you already launched when it's time to navigate to and launch that third project)
-- **QUICKLY GRAB AN ASSET PACK**:  Say you see a cool asset on the unreal marketplace, and you just want to "quickly" check it out.  The process is to add the asset to  your library, navigate to the Library panel (_wait for all the engine versions to get registered_), launch Unreal (_wait for the template browser to come up_), navigate from the default template browser screen to a blank project template, select it, use the browse button to navigate to where you want to put it, choose a name -- that name's already used, or you've used a bad character, or etc., so you pick another.  Now click launch, wait for unreal to start. Reopen Launcher and navigate back to the asset in your Library. Open the asset to install it and select your project... but, that asset pack doesn't support the engine version you just launched, so start all over.....  With **QuickLaunch**, you add the asset to your library, and without navigating away from the asset, open File Explorer and launch the correct version of Unreal with QuickLaunch, import the asset, and you're good to go. :-)
+- **Click _IN_ A FOLDER**:  You can use the right-click context menu by clicking within any folder, or by clicking *on* a folder -- this works in file explorer and on the Windows desktop.  If a project already exists within the folder, that project will be opened.
+- **CLICK _ON_ A FOLDER**:  You can right-click and select **QuickLaunch** on a folder name, to create or open an unreal project without having to navigate into the folder.  QuickLaunch works with the left side Navigation Pane in File Explorer, so you can click on folders that are pinned to **Quick access** and the recent history list without having to navigate to them.
+- **LAUNCH MULTIPLE PROJECTS**: You can use QuickLaunch to rapidly launch multiple projects at once without having to navigate around looking for them.  For example, say you have multiple projects in their own folders within a subfolder in file explorer, and you need them  all open at once to compare project settings.  Just right click on each folder and launch the projects without having to navigate in and out of folders within File Explorer.
+- **QUICKLY GRAB AN ASSET PACK**:  Say you see a cool asset on the unreal marketplace, and you just want to "quickly" check it out.  The normal process is to add the asset to your library, navigate to the Library panel (_wait for all the engine versions to get registered_), launch Unreal (_wait for the template browser to come up_), navigate from the default template browser screen to a blank project template, select it, use the browse button to navigate to where you want to put it, choose a name -- that name's already used, or you've used a bad character, or etc., so you pick another.  Now click launch, wait for unreal to start. Reopen Launcher and navigate back to the asset in your Library. Open the asset to install it and select your project... but, that asset pack doesn't support the engine version you just launched, so start all over.....   -- With **QuickLaunch**, you add the asset to your library, and without navigating away from the asset, open File Explorer and launch the correct version of Unreal, import the asset, and you're good to go. :-)
 
 ## Caveats
 
@@ -125,6 +135,12 @@ At it's core, QuickLaunch works by simply adding some registry hooks that launch
 
 I've written up a short document outlining the registry changes [here](notes/Registry%20Notes.md).
 
+## Contributions
+
+I'd love it if you'd contribute - or just reach out and say, "hi"!  Here's how:
+- Please [file an issue](https://github.com/ScottKirvan/UE_QuickLaunch/issues), or grab a fork, hack away, and create some [pull requests](https://github.com/ScottKirvan/UE_QuickLaunch/pulls).
+- Contact me on [LinkedIn](https://www.linkedin.com/in/scottkirvan/)
+- You can also reach me on my [discord](https://discord.gg/TSKHvVFYxB) server, I'm @cptvideo.
 ## Credits
 **Copyright (c) (2023):** [Scott Kirvan](https://github.com/ScottKirvan)  - All rights reserved   
 *UE_QuickLaunch is licensed under the [MIT License](LICENSE.md).*  
