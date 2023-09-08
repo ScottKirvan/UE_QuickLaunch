@@ -133,6 +133,12 @@ At it's core, QuickLaunch works by simply adding some registry hooks that launch
 
 I've written up a short document outlining the registry changes [here](notes/Registry%20Notes.md).
 
+## Contributions
+
+I'd love it if you'd contribute - or just reach out and say, "hi"!  Here's how:
+- Please [file an issue](https://github.com/ScottKirvan/UE_QuickLaunch_/issues), or grab a fork, hack away, and create some [pull requests](https://github.com/ScottKirvan/UE_QuickLaunch_/pulls).
+- Contact me at [linkedin.com/in/scottkirvan/](https://www.linkedin.com/in/scottkirvan/)
+- You can also contact me at my [discord](https://discord.gg/TSKHvVFYxB) server, I'm @cptvideo.
 ## Credits
 **Copyright (c) (2023):** [Scott Kirvan](https://github.com/ScottKirvan)  - All rights reserved   
 *UE_QuickLaunch is licensed under the [MIT License](LICENSE.md).*  
