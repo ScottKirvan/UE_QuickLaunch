@@ -60,13 +60,15 @@ If you have multiple versions of Unreal Engine installed, a dialog will pop up a
 
 Clicking **OK** creates and launches an Unreal project based on a [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to creating a new UE4 "Blank" template project from the Launcher.  In UE5 there are some [differences you may want to be aware of](#Caveats).  
 
-If you, like me, always enable the same bunch of plugins and project settings everytime you start a new Unreal project, you can save some manual project initialization steps and use a [Template project](#Template%20project) . 
+If you, like me, always enable the same bunch of plugins and project settings every time you start a new Unreal project, you can save some manual project initialization steps and use a QuickLaunch [Template project](#Template%20project) instead. 
 
 ## Template project
 
-UE_QuickLaunch v2.1 introduces the ability to use a template project rather than just the Minimal uproject.  This gives you the ability to fully customize the type of project created by QuickLaunch.  
+UE_QuickLaunch v2.1 introduces the ability to use a template project rather than the default [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8).  This gives you the ability to fully customize the type of project created by QuickLaunch.  
 
-To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory.  The folder's contents will be used as a template to create your new project.  The template's uproject file should be called, `ue_quicklaunch_template.uproject`.  This file will be copied in and renamed to match your project's name.  
+To use the template feature, create a `ue_quicklaunch_template` folder in the UE_QuickLaunch installation directory.  You can put anything you want into the template folder adn its contents will be used as a template to create your new project.  
+
+To created a template uproject file, add an unreal `upro` `ue_quicklaunch_template.uproject` to the template folder.  The template's uproject file should be called, `ue_quicklaunch_template.uproject`.  This file will be copied in and renamed to match your project's name.  
 
 > **Warning**
 > When creating or using a template project, the contents have to be compatible with the version of Unreal you're launching.  For example, you may be able to create a template level in UE 4.27 and successfully launch it in UE 5.3, but trying to load a UE 5.3 asset into 4.27 will probably not work.  Also, when you create your template, the uproject file will determine which version of Unreal Engine is launched, _unless_ you edited the uproject file and delete the line that specifies the Unreal version.  Using config files and uproject files in different versions may produce some unexpected results, but seems relatively safe.  
