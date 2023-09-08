@@ -1,9 +1,8 @@
 # Explanatory notes on the organization of this project.
 ## Repository Branches
-The most recent, and potentially unstable build, will be in the `main` branch.  Releases are branched/tagged with semantic version numbers (ie. `v2.3.4`).  Features and documentation that's WIP will usually be developed in temporary branches that will be deleted when no longer needed.  
+The most recent, and potentially unstable build, will be in the `main` branch.  Releases are branched/tagged with semantic version numbers (ie. `v2.3.4`).  WIP Features and will usually be housed in temporary branches  -- these branches are often deleted when no longer needed.  
 
-I develop my documentation in Obsidian.  In this repo, he `obsidian` branch is a WIP documentation branch that contains automatic checkins from Obsidian.  These are merged back into main periodically. 
-
+I develop my documentation in Obsidian.  In this repo, he `obsidian` branch is a WIP documentation branch that contains automatic checkins from Obsidian.  These are merged (and squashed) back into main periodically. 
 
 ## Building from source
 
