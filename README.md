@@ -41,19 +41,20 @@
   </h4>
 </div>
 
-**UE_QuickLaunch** is a right-click Unreal Engine project creator/launcher for Windows File Explorer. Right-click on or in a folder, and quickly create a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) with the same name as the folder. If the project file already exists, just open it.
+**UE_QuickLaunch** is a right-click Unreal Engine project creator/launcher for Windows File Explorer. Right-click on or in a folder, and quickly create a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) with the same name as the folder. If an unreal project file already exists, QuickLaunch just opens it.
 ## Installation and basic usage
-Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will show the `QuickLaunch Unreal Engine here` menu item. 
+Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select `QuickLaunch Unreal Engine here` to launch Unreal Engine and automatically create your new. 
 
 ![](notes/images/Pasted%20image%2020230907163347.png)
 
-If you don't see this context menu when you right-click in the folder, it may be because you're using Windows 11.  Windows 11 introduced a new right-click context menu.  Click **Show more options** to bring up the 'Classic' right-click context menu.
+> **Note**
+> If you don't see this context menu when you right-click in the folder, it may be because you're using Windows 11.  Windows 11 introduced a new right-click context menu.  Click **Show more options** to bring up the 'Classic' right-click context menu.
+>
+> ![Windows-11-Right-Click-Menu-Show-More-Options](notes/images/Windows-11-Right-Click-Menu-Show-More-Options.jpg)
+> 
+> If you wish, you can configure Windows 11 to use the 'Classic' or 'Legacy' version of the right-click context menu by following the instructions [here](https://pureinfotech.com/bring-back-classic-context-menu-windows-11/).  This is how I work.
 
-![Windows-11-Right-Click-Menu-Show-More-Options](notes/images/Windows-11-Right-Click-Menu-Show-More-Options.jpg)
-
-If you wish, you can configure Windows 11 to use the 'Classic' or 'Legacy' version of the right-click context menu by following the instructions [here](https://pureinfotech.com/bring-back-classic-context-menu-windows-11/).  This is how I work.
-
-If you have multiple versions of Unreal Engine installed, a dialog will pop up asking what version of Unreal to use when creating the new project.
+If you have multiple versions of Unreal Engine installed, a dialog will pop up asking what version of Unreal to launch when creating the new project.
 
 ![](notes/images/Pasted%20image%2020230907163215.png)
 
