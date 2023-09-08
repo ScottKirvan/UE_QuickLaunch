@@ -31,8 +31,8 @@
 </p>
 
 <h4>
-    <a href="https://github.com/ScottKirvan/UE_QuickLaunch/">View Demo</a>
-  <span> · </span>
+    <!--<a href="https://github.com/ScottKirvan/UE_QuickLaunch/">View Demo</a>
+  <span> · </span>-->
     <a href="https://github.com/ScottKirvan/UE_QuickLaunch#readme">Documentation</a>
   <span> · </span>
     <a href="https://github.com/ScottKirvan/UE_QuickLaunch/issues/">Report Bug</a>
@@ -58,7 +58,7 @@ If you have multiple versions of Unreal Engine installed, a dialog will pop up a
 
 ![](notes/images/Pasted%20image%2020230907163215.png)
 
-Clicking **OK** creates and launches an Unreal project based on a [Minimal uproject](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) file.  The new project will be identical to creating a new UE4 "Blank" template project from the Launcher.  In UE5 there are some [differences you may want to be aware of](#Caveats).  
+Clicking **OK** creates and launches an Unreal project based on a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) file.  The new project will be identical to creating a new UE4 "Blank" template project from the Launcher.  In UE5 there are some [differences you may want to be aware of](#Caveats).  
 
 If you, like me, always enable the same bunch of plugins and project settings every time you start a new Unreal project, you can save some manual project initialization steps and use a QuickLaunch [Template project](#Template%20project) instead. 
 
