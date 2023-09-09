@@ -40,8 +40,7 @@
 
       <!-- Docs Shortcut Component -->
       <Component Id="WebsiteShortcutComponent" Guid="acf081aa-d0bb-4692-a4c4-1c0a49a32c3c">
-        <File Id="WebsiteShortcutFile" Source="http://github.com/ScottKirvan/UE_QuickLaunch" KeyPath="yes" />
-        <Shortcut Id="WebsiteShortcut" Name="QuickLaunch Documentation" Target="[WebsiteShortcutFile]" WorkingDirectory="INSTALLFOLDER" />
+        <Shortcut Id="WebsiteShortcut" Name="QuickLaunch Documentation" Target="https://github.com/ScottKirvan/UE_QuickLaunch" WorkingDirectory="INSTALLFOLDER" />
       </Component>
 
     </ComponentGroup>
