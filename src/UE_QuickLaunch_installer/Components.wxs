@@ -42,7 +42,14 @@
       <Component Id="WebsiteShortcutComponent" Guid="acf081aa-d0bb-4692-a4c4-1c0a49a32c3c">
         <Shortcut Directory="DesktopFolder" Id="WebShortcut" Name="Your Page" Description="Your Page Description" Target="[URL]" Icon="IconDesktop">
           <Icon Id="IconDesktop" SourceFile="skvfximageres.dll" />
-        </Shortcut>      </Component>
+        </Shortcut>      
+        <RegistryValue Root="HKCU" 
+          Key="Software\SKVFX\UE_QuickLaunch" 
+          Name="installed" 
+          Type="integer" 
+          Value="1" 
+          KeyPath="yes"/>
+        </Component>
 
     </ComponentGroup>
   </Fragment>
