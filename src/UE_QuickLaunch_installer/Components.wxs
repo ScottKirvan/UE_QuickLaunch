@@ -41,7 +41,7 @@
       <!-- Docs Shortcut Component -->
       <Component Id="WebsiteShortcutComponent" Guid="acf081aa-d0bb-4692-a4c4-1c0a49a32c3c">
         <Shortcut Directory="DesktopFolder" Id="WebShortcut" Name="Your Page" Description="Your Page Description" Target="[URL]" Icon="IconDesktop">
-          <Icon Id="IconDesktop" SourceFile="images\icon.ico" />
+          <Icon Id="IconDesktop" SourceFile="skvfximageres.dll" />
         </Shortcut>      </Component>
 
     </ComponentGroup>
