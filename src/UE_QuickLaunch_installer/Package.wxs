@@ -8,12 +8,28 @@
     </Feature>
     <MediaTemplate EmbedCab="yes" />
     
-   <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
-   <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
-   <!--<ui:WixUI Id="WixUI_Advanced" />-->
-   <!--<ui:WixUI Id="WixUI_FeatureTree" />-->
-   <ui:WixUI Id="WixUI_InstallDir" />
-   <!--<ui:WixUI Id="WixUI_Minimal" />-->
-   <!--<ui:WixUI Id="WixUI_Mondo" />-->
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+
+    <!--
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <ui:WixUI Id="WixUI_InstallDir" />
+    -->
+
+    <!--
+    <Property Id="ApplicationFolderName" Value="UE_QuickLaunch" />
+    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />      
+    <ui:WixUI Id="WixUI_Advanced" />
+    -->
+
+    <!--
+    <ui:WixUI Id="WixUI_FeatureTree" />
+    -->
+
+    <!--
+    <ui:WixUI Id="WixUI_Minimal" />
+    -->
+
+    <ui:WixUI Id="WixUI_Mondo" />
+
   </Package>
 </Wix>
