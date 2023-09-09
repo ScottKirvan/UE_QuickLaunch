@@ -40,7 +40,7 @@
 
       <!-- Docs Shortcut Component -->
       <Component Id="WebsiteShortcutComponent" Guid="acf081aa-d0bb-4692-a4c4-1c0a49a32c3c">
-        <Shortcut Directory="DesktopFolder" Id="WebShortcut" Name="Your Page" Description="Your Page Description" Target="[URL]" Icon="IconDesktop">
+        <Shortcut Directory="[INSTALLFOLDER]" Id="WebShortcut" Name="QuickLaunch Documentation" Description="QuickLaunch Documentation: https://github.com/ScottKirvan/UE_QuickLaunch" Target="[URL]" Icon="IconDesktop">
           <Icon Id="IconDesktop" SourceFile="skvfximageres.dll" />
         </Shortcut>      
         <RegistryValue Root="HKCU" 
