@@ -10,7 +10,6 @@ kanban-plugin: basic
 - [ ] registry keys
 - [ ] resources
 - [ ] shortcuts to docs
-- [ ] customize exit dialog with link back to github
 
 
 ## Options:
@@ -19,6 +18,7 @@ kanban-plugin: basic
 - [ ] Enable Windows Classic right-click menu
 - [ ] change install location
 - [ ] change default template location
+- [ ] option to open docs at end of install
 
 
 
