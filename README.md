@@ -43,7 +43,9 @@
 
 **UE_QuickLaunch** is a right-click Unreal Engine project creator/launcher for Windows File Explorer. Right-click on or in a folder, and quickly create a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) with the same name as the folder. If an unreal project file already exists, QuickLaunch just opens it.
 ## Installation and basic usage
-Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer will ask for permissions to add the registry settings.  After the installer has run, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select **QuickLaunch Unreal Engine here** to create a new project and launch Unreal Engine. 
+Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/UE_QuickLaunch/releases).  The installer, by default, installs into `c:\Program Files\UE_QuickLaunch`.  It will ask for permissions to add the registry settings.
+
+After successfully installing, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select **QuickLaunch Unreal Engine here** to create a new project and launch Unreal Engine. 
 
 ![](notes/images/Pasted%20image%2020230907163347.png)
 
