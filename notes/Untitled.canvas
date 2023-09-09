@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"2e604f05184a984e","x":-240,"y":-280,"width":200,"height":60,"type":"text","text":"batch file"},
-		{"id":"523543547f3120ab","x":-240,"y":-200,"width":250,"height":60,"type":"text","text":"registry keys"}
+		{"id":"523543547f3120ab","x":-240,"y":-200,"width":260,"height":200,"type":"text","text":"# registry keys"}
 	],
 	"edges":[]
 }
