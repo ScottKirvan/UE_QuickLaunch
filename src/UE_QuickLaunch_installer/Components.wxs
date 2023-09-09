@@ -1,6 +1,6 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
   <Fragment>
-    <ComponentGroup Id="MainComponents" Directory="INSTALLFOLDER">
+    <ComponentGroup Id="DefaultComponents" Directory="INSTALLFOLDER">
 
       <!-- File Components -->
       <Component Id="ResourceDLL" Guid="50be778e-5086-424a-bf5d-9f1bf2a6c928">
@@ -39,8 +39,8 @@
       </Component>
 
       <!-- Docs Shortcut Component -->
-      <Component Id="WebsiteShortcutComponent" Guid="PUT-GUID-HERE">
-        <File Id="WebsiteShortcutFile" Source="https://github.com/ScottKirvan/UE_QuickLaunch" KeyPath="yes" />
+      <Component Id="WebsiteShortcutComponent" Guid="acf081aa-d0bb-4692-a4c4-1c0a49a32c3c">
+        <File Id="WebsiteShortcutFile" Source="http://github.com/ScottKirvan/UE_QuickLaunch" KeyPath="yes" />
         <Shortcut Id="WebsiteShortcut" Name="QuickLaunch Documentation" Target="[WebsiteShortcutFile]" WorkingDirectory="INSTALLFOLDER" />
       </Component>
 
