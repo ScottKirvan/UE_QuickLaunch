@@ -8,8 +8,9 @@ kanban-plugin: basic
 
 - [ ] the main script
 - [ ] registry keys
-- [ ] customize exit dialog with link back to github
+- [ ] resources
 - [ ] shortcuts to docs
+- [ ] customize exit dialog with link back to github
 
 
 ## Options:
