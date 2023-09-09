@@ -11,7 +11,7 @@
                 // Ask msbuild to generate full paths for file names.
                 "${workspaceFolder}\\src\\UE_QuickLaunch.sln",
                 "/property:GenerateFullPaths=true",
-                "/t:rebuild",
+                "/t:build",
                 // Do not generate summary otherwise it leads to duplicate errors in Problems panel
                 "/consoleloggerparameters:NoSummary",
                 "/p:Platform=x64",

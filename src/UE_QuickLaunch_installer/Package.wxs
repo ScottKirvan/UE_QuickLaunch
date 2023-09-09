@@ -1,15 +1,41 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
      xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
-  <Package Name="UE_QuickLaunch" Manufacturer="SKVFX" Version="2.0.0.0" UpgradeCode="5841e624-2d30-4a43-9d17-ac613df29903">
+  <Package Name="UE_QuickLaunch" Manufacturer="SKVFX" Version="2.1.0.0" UpgradeCode="5841e624-2d30-4a43-9d17-ac613df29903">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
+    <!--
+    <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" Sequence="execute"  Before="CreateShortcuts" />
+    -->
+    <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
+
+
     <Feature Id="Main">
-      <ComponentGroupRef Id="MainComponents" />
+      <ComponentGroupRef Id="DefaultComponents" />
     </Feature>
     <MediaTemplate EmbedCab="yes" />
     
-   <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
     <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
-   <ui:WixUI Id="WixUI_InstallDir" />
+
+    <!--
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <ui:WixUI Id="WixUI_InstallDir" />
+    -->
+
+    <!--
+    <Property Id="ApplicationFolderName" Value="UE_QuickLaunch" />
+    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />      
+    <ui:WixUI Id="WixUI_Advanced" />
+    -->
+
+    <!--
+    <ui:WixUI Id="WixUI_FeatureTree" />
+    -->
+
+    <!--
+    <ui:WixUI Id="WixUI_Minimal" />
+    -->
+
+    <ui:WixUI Id="WixUI_Mondo" />
+
   </Package>
 </Wix>
