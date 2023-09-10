@@ -8,14 +8,21 @@
     -->
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
     <Property Id="INSTALLTEMPLATES" Value="0" />
+    <Property Id="CUSTOMDIR" Value="!(bline.Property.ProductName)" />
+
+    <CustomAction Id="CalculateInstallPath" Property="INSTALLFOLDER" Value="[INSTALLFOLDER]\UE_QuickLaunch" />
+
+    <InstallExecuteSequence>
+      <Custom Action="CalculateInstallPath" Before="CostFinalize"></Custom>
+    </InstallExecuteSequence>
 
 
     <Feature Id="Main" Title="Required Components" ConfigurableDirectory="INSTALLFOLDER" Level="1">
       <ComponentGroupRef Id="DefaultComponents" />
 
-    <Feature Id="Template" Title="UE5 Template" Level="1" >
-      <ComponentGroupRef Id="TemplateComponents" />
-    </Feature>
+      <Feature Id="Template" Title="UE5 Template" Level="1" >
+        <ComponentGroupRef Id="TemplateComponents" />
+      </Feature>
     </Feature>
 
     <MediaTemplate EmbedCab="yes" />
