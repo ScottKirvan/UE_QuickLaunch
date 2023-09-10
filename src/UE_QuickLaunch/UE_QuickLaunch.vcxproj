@@ -82,7 +82,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>xcopy $(ProjectDir)\contents $(SolutionDir)$(Platform)\$(Configuration)\ /E /H /C /K /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -101,7 +101,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>xcopy $(ProjectDir)\contents $(SolutionDir)$(Platform)\$(Configuration)\ /E /H /C /K /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -116,7 +116,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>xcopy $(ProjectDir)\contents $(SolutionDir)$(Platform)\$(Configuration)\ /E /H /C /K /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -135,13 +135,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)\ue-quicklaunch.bat $(SolutionDir)$(Platform)\$(Configuration)\</Command>
+      <Command>xcopy $(ProjectDir)\contents $(SolutionDir)$(Platform)\$(Configuration)\ /E /H /C /K /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="..\..\bin\ue-quicklaunch.bat" />
-    <None Include="eu_quicklaunch_template\Config\DefaultEngine.ini" />
-    <None Include="eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
+    <None Include="contents\eu_quicklaunch_template\Config\DefaultEngine.ini" />
+    <None Include="contents\eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
+    <None Include="contents\ue-quicklaunch.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
