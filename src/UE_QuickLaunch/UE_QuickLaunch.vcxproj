@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\..\bin\ue-quicklaunch.bat" />
+    <None Include="eu_quicklaunch_template\Config\DefaultEngine.ini" />
+    <None Include="eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
