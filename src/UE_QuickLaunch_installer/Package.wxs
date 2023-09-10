@@ -11,6 +11,7 @@
 
     <Feature Id="Main">
       <ComponentGroupRef Id="DefaultComponents" />
+      <ComponentGroupRef Id="TemplateComponents" />
     </Feature>
     <MediaTemplate EmbedCab="yes" />
     

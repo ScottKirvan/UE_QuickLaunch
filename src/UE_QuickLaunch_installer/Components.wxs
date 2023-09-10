@@ -11,6 +11,16 @@
         <File Source="ue-quicklaunch.bat" />
       </Component>
 
+      <!--
+      <Component Id="TemplateUproject" Guid="4638e36d-e6ed-420f-bc31-55bcf6f5d048" Directory="UEQLTemplateFolder" >
+        <File Source="eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
+      </Component>
+
+      <Component Id="TemplateConfig" Guid="0b518f08-3dd6-478b-b876-0eff1be128f9" Directory="UEQLConfigFolder" >
+        <File Source="eu_quicklaunch_template\Config\DefaultEngine.ini" />
+      </Component>
+      -->
+
       <!-- Registry Components -->
       <Component Id="RegistryComponent_clickInFolder" Guid="AB8C4904-52D3-4444-A80D-EDC9968D3EF4">
             <RegistryKey Root="HKCR" Key="Directory\Background\shell\UE_QuickLaunch">
@@ -51,6 +61,15 @@
           KeyPath="yes"/>
         </Component>
 
+    </ComponentGroup>
+    <ComponentGroup Id="TemplateComponents" Directory="INSTALLFOLDER">
+      <Component Id="TemplateUproject" Guid="4638e36d-e6ed-420f-bc31-55bcf6f5d048" Directory="UEQLTemplateFolder" >
+        <File Source="eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
+      </Component>
+
+      <Component Id="TemplateConfig" Guid="0b518f08-3dd6-478b-b876-0eff1be128f9" Directory="UEQLConfigFolder" >
+        <File Source="eu_quicklaunch_template\Config\DefaultEngine.ini" />
+      </Component>
     </ComponentGroup>
   </Fragment>
 </Wix>
