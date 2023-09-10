@@ -6,19 +6,23 @@ kanban-plugin: basic
 
 ## Required:
 
-- [ ] the main script
-- [ ] registry keys
-- [ ] resources
-- [ ] shortcuts to docs
 
 
 ## Options:
 
+- [ ] change default template location
+- [ ] option to open docs at end of install
+
+
+## Done
+
+- [ ] the main script
+- [ ] registry keys
+- [ ] resources
 - [ ] UE5 Template
 - [ ] Enable Windows Classic right-click menu
 - [ ] change install location
-- [ ] change default template location
-- [ ] option to open docs at end of install
+- [ ] shortcuts to docs
 
 
 
