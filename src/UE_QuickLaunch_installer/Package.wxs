@@ -7,11 +7,17 @@
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" Sequence="execute"  Before="CreateShortcuts" />
     -->
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
+    <Property Id="INSTALLTEMPLATES" Value="0" />
 
 
-    <Feature Id="Main">
+    <Feature Id="Main" Title="Required Components" Level="1">
       <ComponentGroupRef Id="DefaultComponents" />
     </Feature>
+
+    <Feature Id="Template" Title="UE5 Template" Level="1" >
+      <ComponentGroupRef Id="TemplateComponents" />
+    </Feature>
+
     <MediaTemplate EmbedCab="yes" />
     
     <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
