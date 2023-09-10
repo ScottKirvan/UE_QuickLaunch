@@ -5,7 +5,6 @@
 
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
     <Property Id="CUSTOMDIR" Value="!(bline.Property.ProductName)" />
-    <!--<Property Id="WIXUI_EXITDIALOGOPTIONALTEXT" Value="GORILLATITS - Thank you for installing this product." />-->
 
     <CustomAction Id="CalculateInstallPath" Property="INSTALLFOLDER" Value="[INSTALLFOLDER]\UE_QuickLaunch" />
 
