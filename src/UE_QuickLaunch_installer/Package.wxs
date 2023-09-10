@@ -10,12 +10,12 @@
     <Property Id="INSTALLTEMPLATES" Value="0" />
 
 
-    <Feature Id="Main" Title="Required Components" Level="1">
+    <Feature Id="Main" Title="Required Components" ConfigurableDirectory="INSTALLFOLDER" Level="1">
       <ComponentGroupRef Id="DefaultComponents" />
-    </Feature>
 
     <Feature Id="Template" Title="UE5 Template" Level="1" >
       <ComponentGroupRef Id="TemplateComponents" />
+    </Feature>
     </Feature>
 
     <MediaTemplate EmbedCab="yes" />
