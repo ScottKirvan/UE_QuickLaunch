@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - By default, the installer now installs into a `UE_QuickLaunch` folder instead of `SKVFX UE_QuickLaunch`.
 - More robust error checking an correction of unsupported characters in `uproject` filenames
 - A shortcut to the documentation (on github) has been added.
+- The installer includes a default, example UE5 template that can be installed.
 
 
 ## [Released]
