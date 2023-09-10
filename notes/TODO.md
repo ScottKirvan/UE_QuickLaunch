@@ -1,12 +1,9 @@
 TODO
 ----
-See [repository issues](https://github.com/ScottKirvan/UE_QuickLaunch/issues/)  
-
-- [ ] .
+See current TODO project/list on [GitHub](https://github.com/users/ScottKirvan/projects/1)  
 
 In Progress
 -----------
-- [ ]  .
 
 Done ✓
 ------
