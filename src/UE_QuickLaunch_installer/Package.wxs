@@ -3,12 +3,9 @@
   <Package Name="UE_QuickLaunch" Manufacturer="SKVFX" Version="2.1.0.0" UpgradeCode="5841e624-2d30-4a43-9d17-ac613df29903">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
-    <!--
-    <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" Sequence="execute"  Before="CreateShortcuts" />
-    -->
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
-    <Property Id="INSTALLTEMPLATES" Value="0" />
     <Property Id="CUSTOMDIR" Value="!(bline.Property.ProductName)" />
+    <!--<Property Id="WIXUI_EXITDIALOGOPTIONALTEXT" Value="GORILLATITS - Thank you for installing this product." />-->
 
     <CustomAction Id="CalculateInstallPath" Property="INSTALLFOLDER" Value="[INSTALLFOLDER]\UE_QuickLaunch" />
 
@@ -16,12 +13,23 @@
       <Custom Action="CalculateInstallPath" Before="CostFinalize"></Custom>
     </InstallExecuteSequence>
 
-
-    <Feature Id="Main" Title="Required Components" ConfigurableDirectory="INSTALLFOLDER" Level="1">
+    <Feature Id="Main" Title="Required Components" ConfigurableDirectory="INSTALLFOLDER" Level="1"
+              Description="Configures all File Explorer hooks, installs the launch script, and creates a shortcut to the documentation."
+              >
       <ComponentGroupRef Id="DefaultComponents" />
+    </Feature>
 
-      <Feature Id="Template" Title="UE5 Template" Level="1" >
+    <Feature Id="Optional" Title="Optional Components" Display="expand" Level="1">
+      <Feature Id="Template" Title="UE5 Template" Level="1" 
+              Description="Installs a default UE5 project template.  Without this UE_QuickLaunch will launch Unreal Engine using a minimal, UE4 compatible uproject file."
+              >
         <ComponentGroupRef Id="TemplateComponents" />
+      </Feature>
+
+      <Feature Id="ClassicRCMenu" Title="&quot;Classic&quot; Win 10 Right-Click Menu" Level="1000" 
+              Description="SYSTEM RESTART REQUIRED.  Reverts the Windows 11 File Explorer right-click menu to the &quot;Classic&quot; Win 10 style. Less clicks to launch Unreal Engine."
+              >
+        <ComponentGroupRef Id="ClassicRCComponents" />
       </Feature>
     </Feature>
 
@@ -29,26 +37,13 @@
     
     <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
 
-    <!--
-    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
-    <ui:WixUI Id="WixUI_InstallDir" />
-    -->
-
-    <!--
-    <Property Id="ApplicationFolderName" Value="UE_QuickLaunch" />
-    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />      
-    <ui:WixUI Id="WixUI_Advanced" />
-    -->
-
-    <!--
-    <ui:WixUI Id="WixUI_FeatureTree" />
-    -->
-
-    <!--
-    <ui:WixUI Id="WixUI_Minimal" />
-    -->
-
     <ui:WixUI Id="WixUI_Mondo" />
 
+    <!--  I would like to do this ONLY if the "ClassicRCMenu" feature is selected, but I don't know how to do that. REBOOT is left to user now. -->
+    <!--
+    <InstallExecuteSequence>
+      <ScheduleReboot After="InstallFinalize"  />
+    </InstallExecuteSequence>
+    -->
   </Package>
 </Wix>
