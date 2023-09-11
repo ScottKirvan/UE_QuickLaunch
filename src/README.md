@@ -30,7 +30,8 @@ The installer, `UE_QuickLaunch_installer.msi`, runs unassisted and builds into t
 - https://www.firegiant.com/wix/tutorial/user-interface/ui-wizardry/
 	- This is WiX v3, but I think I'm starting to get my head around
 	the v3/v4 differences (i.e. "Product," became, "Package", etc.)
-
+- https://www.firegiant.com/docs/wix/v3/tutorial/
+- I'm finding I can stub together close-to-working v3 code snippets and use `wix convert` to get a better idea how to format the v4 version.  This is helping, but what a PITA.  Document your fucking code.
 
 
 
