@@ -52,6 +52,9 @@
     </UI>
 
     <!--  I would like to do this ONLY if the "ClassicRCMenu" feature is selected, but I don't know how to set up the conditional. REBOOT is left to user now. -->
+    <!-- An alternative to doing a full system reboot is just restarting Windows Explorer... -->
+    <!-- This can be done via the Task Manager, or by running the following command in a command prompt/batchfile: -->
+    <!-- taskkill /f /im explorer.exe & start explorer.exe -->
     <!--
     <InstallExecuteSequence>
       <ScheduleReboot After="InstallFinalize"  />

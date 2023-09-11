@@ -5,6 +5,7 @@ src/.vs/*
 src/Debug/*
 src/x64/*
 *.dead
+*.swp
 src/skvfximageres/.vs/*
 src/skvfximageres/x64/*
 src/skvfximageres/skvfximageres.sln
@@ -19,3 +20,4 @@ src/UE_QuickLaunch_installer/obj/*
 src/UpgradeLog.htm
 
 src/UE_QuickLaunch/ue_quicklaunch_template/*
+notes/.CHANGELOG.md.swp

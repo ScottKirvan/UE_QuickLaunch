@@ -11,7 +11,6 @@ kanban-plugin: basic
 ## Options:
 
 - [ ] change default template location
-- [ ] option to open docs at end of install
 
 
 ## Done
@@ -23,6 +22,7 @@ kanban-plugin: basic
 - [ ] Enable Windows Classic right-click menu
 - [ ] change install location
 - [ ] shortcuts to docs
+- [ ] option to open docs at end of install
 
 
 
