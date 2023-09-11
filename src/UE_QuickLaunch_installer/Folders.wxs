@@ -7,6 +7,8 @@
         </Directory>
         <Directory Id="UEQLConfigFolder" Name="ue_quicklaunch_template\Config" >
         </Directory>
+        <Directory Id="ProductFolder" Name="UE_QuickLaunch">
+        </Directory>
       </Directory>
     </StandardDirectory>
   </Fragment>

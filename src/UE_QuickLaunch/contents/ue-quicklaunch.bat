@@ -6,13 +6,20 @@ SET mode=%~2
 set "sourceDir=%~dp0"
 ECHO %~n0 was called with the following arguments: %targetDir% %mode% %sourceDir%
 
-IF NOT DEFINED targetDir GOTO ERROR
 IF NOT DEFINED mode GOTO ERROR
+IF NOT "%mode%"=="ON_FOLDER" IF NOT "%mode%"=="IN_FOLDER" if NOT "%mode%"=="OPEN_DOCS" echo The second argument must be either "ON_FOLDER", "IN_FOLDER", or "OPEN_DOCS" aborting. && goto ERROR
+
+if %mode%==OPEN_DOCS (
+    start "" "https://github.com/ScottKirvan/UE_QuickLaunch"
+    goto END
+)
+
+IF NOT DEFINED targetDir GOTO ERROR
 IF NOT DEFINED sourceDir GOTO ERROR
+
 REM check if targetDir exists
 if not exist "%targetDir%" echo The target directory does not exist, aborting. && goto ERROR
 REM check if mode is either "ON_FOLDER" or "IN_FOLDER"
-IF NOT "%mode%"=="ON_FOLDER" IF NOT "%mode%"=="IN_FOLDER" echo The mode argument must be either "ON_FOLDER" or "IN_FOLDER", aborting. && goto ERROR
 
 For %%A in ("%targetDir%") do (
     Set projectName=%%~nxA

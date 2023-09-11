@@ -13,3 +13,5 @@ Reboot is manual - I'd like to set up a conditional for this but can't figure ho
 
 It would be nice to make the option to install the classic right click menu dependent on windows version
 
+look at  where I've harcoded UE_QuickLaunch in package.wxs -  set up a  <Directory> for that
+

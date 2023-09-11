@@ -5,9 +5,19 @@
 
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
     <Property Id="CUSTOMDIR" Value="!(bline.Property.ProductName)" />
+    <Binary Id="BatchFile" SourceFile="ue-quicklaunch.bat" />
+    <Property Id="WixShellExecBinaryId" Value="BatchFile" />
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Open documentation on GitHub" />
 
-    <CustomAction Id="CalculateInstallPath" Property="INSTALLFOLDER" Value="[INSTALLFOLDER]\UE_QuickLaunch" />
+    <CustomAction 
+          Id="OpenGitHubDocs" 
+          Return="ignore" 
+          Impersonate="no" 
+          Directory="ProductFolder"
+          ExeCommand="cmd.exe /c ue-quicklaunch.bat stub OPEN_DOCS"
+          />
 
+    <CustomAction Id="CalculateInstallPath" Property="INSTALLFOLDER" Value="[ProductFolder]" />
     <InstallExecuteSequence>
       <Custom Action="CalculateInstallPath" Before="CostFinalize"></Custom>
     </InstallExecuteSequence>
@@ -36,9 +46,12 @@
     
     <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
 
-    <ui:WixUI Id="WixUI_Mondo" />
+    <UI>
+      <ui:WixUI Id="WixUI_Mondo" />
+      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="OpenGitHubDocs" Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed" />
+    </UI>
 
-    <!--  I would like to do this ONLY if the "ClassicRCMenu" feature is selected, but I don't know how to do that. REBOOT is left to user now. -->
+    <!--  I would like to do this ONLY if the "ClassicRCMenu" feature is selected, but I don't know how to set up the conditional. REBOOT is left to user now. -->
     <!--
     <InstallExecuteSequence>
       <ScheduleReboot After="InstallFinalize"  />
