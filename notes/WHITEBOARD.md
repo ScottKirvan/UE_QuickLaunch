@@ -15,6 +15,9 @@ It would be nice to make the option to install the classic right click menu depe
 
 look at  where I've harcoded UE_QuickLaunch in package.wxs -  set up a  <<Directory>> for that
 
+If you get a "Couldn't set association for project. Check the file is writeable" error starting Unreal, it probly means your `uproject` file (in JSON format), is broken -- you most likely have an extra or missing comma.
+![](../Pasted%20image%2020230911170051.png)
+
 
 
 
