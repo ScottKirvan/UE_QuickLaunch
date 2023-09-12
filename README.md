@@ -137,7 +137,7 @@ The **QuickLauncher** project ends up being a just barely lighter starting point
 
 At it's core, QuickLaunch works by simply adding some registry hooks that launch a batch file which stubs in your basic project (or template) and launches Unreal.  
 
-I've written up a short document outlining the registry changes [here](notes/Registry%20Notes.md).
+I've written up a short document outlining the registry changes [here](notes/Registry Notes.md).
 
 ## Contributions
 
