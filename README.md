@@ -1,7 +1,7 @@
 
 <div align="center">
 
-  <img src="notes/images/banner.png" alt="logo" width="701" height="auto" />
+  <img src="assets/media/banner.png" alt="logo" width="701" height="auto" />
   <h1><a href="https://github.com/ScottKirvan/UE_QuickLaunch">ScottKirvan/UE_QuickLaunch</a></h1>
   <h3>A Right-click quick-launch menu for Unreal Engine</h3>
   
@@ -122,7 +122,7 @@ In the launcher based version:
 | Setting                                                                                              | **QuickLaunch** Project      | Launcher Blank Game          |
 | ---------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------- |
 | Project > Target Hardware > **Optimize project settings for**                                        | "Unspecified", "Unspecified" | "Desktop", "Maximum"         |
-| Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method**                    | "None"                      | "Lumen"*                      |
+| Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method**                    | "None"                       | "Lumen"*                     |
 | Engine > Rendering > Shadows > **Shadow Map Method**                                                 | "Shadow Maps"                | "VIrtual Shadow Maps (beta)" |
 | Engine > Rendering > Default Settings > **Extend default luminance range in Auto Exposure settings** | disabled                     | enabled                      |
 | Platforms > Windows > D3D12 Targeted Shader Formats > **SM5**                                        | enabled                      | disabled                     |
