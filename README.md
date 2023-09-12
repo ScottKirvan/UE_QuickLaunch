@@ -1,7 +1,7 @@
 
 <div align="center">
 
-  <img src="notes/images/banner.png" alt="logo" width="701" height="auto" />
+  <img src="assets/media/banner.png" alt="logo" width="701" height="auto" />
   <h1><a href="https://github.com/ScottKirvan/UE_QuickLaunch">ScottKirvan/UE_QuickLaunch</a></h1>
   <h3>A Right-click quick-launch menu for Unreal Engine</h3>
   
@@ -49,18 +49,18 @@ Download and run [UE_QuickLaunch_installer.msi](https://github.com/ScottKirvan/
 After successfully installing, right-clicking on a folder or an empty area within File Explorer will display it's context menu.  Select **QuickLaunch Unreal Engine here** to create a new project and launch Unreal Engine. 
 
 
-![](notes/images/Pasted%20image%2020230907163347.png)
+![](assets/media/Pasted%20image%2020230907163347.png)
 
 > **Note**
 > If you don't see this context menu when you right-click in the folder, it may be because you're using Windows 11.  Windows 11 introduced a new right-click context menu.  Click **Show more options** to bring up the 'Classic' right-click context menu.
 >
-![Windows-11-Right-Click-Menu-Show-More-Options](notes/images/Windows-11-Right-Click-Menu-Show-More-Options.jpg)
+![Windows-11-Right-Click-Menu-Show-More-Options](assets/media/Windows-11-Right-Click-Menu-Show-More-Options.jpg)
 > 
 > If you wish, you can configure Windows 11 to use the _'Classic'_ or _'Legacy'_ version of the right-click context menu by following the instructions [here](https://pureinfotech.com/bring-back-classic-context-menu-windows-11/). 
 
 If you have multiple versions of Unreal Engine installed, a dialog will pop up asking what version of Unreal to launch when creating the new project.
 
-![](notes/images/Pasted%20image%2020230907163215.png)
+![](assets/media/Pasted%20image%2020230907163215.png)
 
 Clicking **OK** creates and launches an Unreal project based on a [minimal unreal project](https://gist.github.com/ScottKirvan/84d287bafed19a1e9f0b8764ba21ceb8) (`uproject`) file.  The new project will be identical to creating a new UE4 "Blank" template project from the Launcher.  In UE5 there are some [differences you may want to be aware of](#Caveats).  
 
@@ -122,7 +122,7 @@ In the launcher based version:
 | Setting                                                                                              | **QuickLaunch** Project      | Launcher Blank Game          |
 | ---------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------- |
 | Project > Target Hardware > **Optimize project settings for**                                        | "Unspecified", "Unspecified" | "Desktop", "Maximum"         |
-| Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method**                    | "None"                      | "Lumen"*                      |
+| Engine > Rendering > Global Illumination > **Dynamic Global Illumination Method**                    | "None"                       | "Lumen"*                     |
 | Engine > Rendering > Shadows > **Shadow Map Method**                                                 | "Shadow Maps"                | "VIrtual Shadow Maps (beta)" |
 | Engine > Rendering > Default Settings > **Extend default luminance range in Auto Exposure settings** | disabled                     | enabled                      |
 | Platforms > Windows > D3D12 Targeted Shader Formats > **SM5**                                        | enabled                      | disabled                     |
@@ -137,7 +137,7 @@ The **QuickLauncher** project ends up being a just barely lighter starting point
 
 At it's core, QuickLaunch works by simply adding some registry hooks that launch a batch file which stubs in your basic project (or template) and launches Unreal.  
 
-I've written up a short document outlining the registry changes [here](notes/Registry%20Notes.md).
+I've written up a short document outlining the registry changes [here](notes/RegistryNotes.md).
 
 ## Contributions
 
