@@ -1,12 +1,15 @@
-TODO
-----
-See current TODO project/list on [GitHub](https://github.com/users/ScottKirvan/projects/1)  
+---
 
-In Progress
------------
+kanban-plugin: basic
 
-Done ✓
-------
+---
+
+## TODO
+- [ ] change default template location
+
+## In Progress
+
+## Done ✓
 - [x] add a list of all the registry keys that are created/touched, so that they can be found manually if needed
 - [x] get this in github
 - [x] document unc path issue
@@ -19,11 +22,20 @@ Done ✓
 - [x] roll this into a standard windows installer
 - [x] fix ipsum on the installer welcome page
 - [x] implement better error handling - there's still some characters that are invalid in UE project files
+- [ ] the main script
+- [ ] registry keys
+- [ ] resources
+- [ ] UE5 Template
+- [ ] Enable Windows Classic right-click menu
+- [ ] change install location
+- [ ] shortcuts to docs
+- [ ] option to open docs at end of install
+
+## Not Gonna Do ✓
 
 
-
-Not Gonna Do ✓
-------
-- [x] something to ponder: doing this in scooterutils will let is know where the engine is located at install-time
-- [x] switch Statement using 'call' - for handling of type of context click and for errors - #someday/maybe
-- [x] simplify code by setting up var strings before doing the actual work - #someday/maybe
+%% kanban:settings
+```
+{"kanban-plugin":"basic"}
+```
+%%
