@@ -5,18 +5,24 @@ kanban-plugin: basic
 ---
 
 ## TODO
+
+- [ ] Issues on GitHub: <br> https://github.com/users/ScottKirvan/projects/1/views/3
 - [ ] change default template location
+
 
 ## In Progress
 
+
+
 ## Done ✓
+
 - [x] add a list of all the registry keys that are created/touched, so that they can be found manually if needed
 - [x] get this in github
 - [x] document unc path issue
 - [x] windows only
 - [x] add icon
 - [x] add a link to reg file docs from microsoft
-- [x] include a description of the difference between what this launched and what's enabled/setup in a default blank game template (lumen, modeling tools, etc.) 
+- [x] include a description of the difference between what this launched and what's enabled/setup in a default blank game template (lumen, modeling tools, etc.)
 - [x] use at your own risk
 - [x] check filename for spaces
 - [x] roll this into a standard windows installer
@@ -31,7 +37,11 @@ kanban-plugin: basic
 - [ ] shortcuts to docs
 - [ ] option to open docs at end of install
 
+
 ## Not Gonna Do ✓
+
+
+
 
 
 %% kanban:settings
