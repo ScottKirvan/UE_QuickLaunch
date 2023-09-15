@@ -55,6 +55,7 @@
     </ComponentGroup>
 
     <!-- Template files -->
+    <!--
     <ComponentGroup Id="TemplateComponents" Directory="INSTALLFOLDER">
       <Component Id="TemplateUproject" Guid="4638e36d-e6ed-420f-bc31-55bcf6f5d048" Directory="UEQLTemplateFolder" >
         <File Source="eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
@@ -64,8 +65,10 @@
         <File Source="eu_quicklaunch_template\Config\DefaultEngine.ini" />
       </Component>
     </ComponentGroup>
+    -->
 
     <!-- Classic RC Menu -->
+    <!--
     <ComponentGroup Id="ClassicRCComponents" Directory="INSTALLFOLDER">
       <Component Id="RegistryComponent_ClassicRCMenu" Guid="ff584590-8c0a-4083-a239-a4e2d8093f8d">
             <RegistryKey Root="HKCU" Key="Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32">
@@ -73,6 +76,7 @@
             </RegistryKey>
       </Component>
     </ComponentGroup>
+    -->
 
   </Fragment>
 </Wix>

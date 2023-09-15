@@ -4,11 +4,12 @@
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
-    <Property Id="CUSTOMDIR" Value="!(bline.Property.ProductName)" />
+    <!--<Property Id="CUSTOMDIR" Value="!(bline.Property.ProductName)" />-->
     <Binary Id="BatchFile" SourceFile="ue-quicklaunch.bat" />
     <Property Id="WixShellExecBinaryId" Value="BatchFile" />
     <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Open documentation on GitHub" />
 
+    <!--
     <CustomAction 
           Id="OpenGitHubDocs" 
           Return="ignore" 
@@ -21,6 +22,7 @@
     <InstallExecuteSequence>
       <Custom Action="CalculateInstallPath" Before="CostFinalize"></Custom>
     </InstallExecuteSequence>
+    -->
 
     <Feature Id="Main" Title="Required Components" ConfigurableDirectory="INSTALLFOLDER" Level="1"
               Description="Configures all File Explorer hooks, installs the launch script, and creates a shortcut to the documentation."
@@ -28,6 +30,7 @@
       <ComponentGroupRef Id="DefaultComponents" />
     </Feature>
 
+    <!--
     <Feature Id="Optional" Title="Optional Components" Display="expand" Level="1">
       <Feature Id="Template" Title="UE5 Template" Level="1" 
               Description="Installs a default UE5 project template.  Without this UE_QuickLaunch will launch Unreal Engine using a minimal, UE4 compatible uproject file."
@@ -41,6 +44,7 @@
         <ComponentGroupRef Id="ClassicRCComponents" />
       </Feature>
     </Feature>
+    -->
 
     <MediaTemplate EmbedCab="yes" />
     
@@ -48,7 +52,7 @@
 
     <UI>
       <ui:WixUI Id="WixUI_Mondo" />
-      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="OpenGitHubDocs" Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed" />
+      <!--<Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="OpenGitHubDocs" Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed" />-->
     </UI>
 
     <!--  I would like to do this ONLY if the "ClassicRCMenu" feature is selected, but I don't know how to set up the conditional. REBOOT is left to user now. -->
