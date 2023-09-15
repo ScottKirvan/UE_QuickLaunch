@@ -80,24 +80,27 @@ if %mode%==IN_FOLDER (
         REM /E - copy all subfolders and files including empty ones
         REM /Y - suppress prompting to confirm you want to overwrite an existing destination file
         REM /C - continue copying even if errors occur (e.g. file already exists in destination, but since we can't confirm overwite, we will skip it)
+        echo xcopy "%sourceDir%\ue_quicklaunch_template\" "%targetDir%\" /E /Y /C
         xcopy "%sourceDir%\ue_quicklaunch_template\" "%targetDir%\" /E /Y /C
 
         REM Rename the uproject file
-        ren "ue_quicklaunch_template.uproject" "%projectName%.uproject"
+        echo ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
+        ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
 
     ) else (
         REM Template folder does not exist, so create the uproject file
         echo The "ue_quicklaunch_template" folder does not exist in "%sourceDir%"
 
-        if not EXIST "%projectName%.uproject" (
+        if not EXIST "%targetDri%\%projectName%.uproject" (
             echo Creating new uproject file.
-            echo { "FileVersion": 3 } > "%projectName%.uproject"
+            echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
         )
     )
 
     echo.Launching: "%projectName%.uproject"
 
-    start "" "%projectName%.uproject"
+    echo start "" "%targetDir%\%projectName%.uproject"
+    start "" "%targetDir%\%projectName%.uproject"
 )
 
 REM this is for the click on the folder name version
@@ -113,6 +116,7 @@ if %mode%==ON_FOLDER (
         REM /E - copy all subfolders and files including empty ones
         REM /Y - suppress prompting to confirm you want to overwrite an existing destination file
         REM /C - continue copying even if errors occur (e.g. file already exists in destination, but since we can't confirm overwite, we will skip it)
+        echo xcopy "%sourceDir%\ue_quicklaunch_template\" "%targetDir%\" /E /Y /C
         xcopy "%sourceDir%\ue_quicklaunch_template\" "%targetDir%\" /E /Y /C
 
         REM Rename the uproject file
@@ -143,5 +147,5 @@ PAUSE
 
 endLocal
 
-REM PAUSE
+PAUSE
 

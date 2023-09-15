@@ -16,7 +16,7 @@ If you load the solution and the installer project comes up as "incompatible" (y
 
 If you're interested in learning how to make an MSI installer using something like HeatWave, I found the Wix v4 documentation pretty impenetrable, but ChatGPT did a pretty good job at getting me started with the xml syntax.
 
-The installer, `UE_QuickLaunch_installer.msi`, runs unassisted and builds into the EU_QuickLaunchInstaller/bin folder and installs to `ProgramFiles/SKVFX UE_QuickLaunch`. It can be uninstalled/modified, in **Window's Settings > Apps > Installed apps**.
+The installer, `UE_QuickLaunch_installer.msi`, runs unassisted and builds into the UE_QuickLaunchInstaller/bin folder and installs to `ProgramFiles/SKVFX UE_QuickLaunch`. It can be uninstalled/modified, in **Window's Settings > Apps > Installed apps**.
 
 # WiX v4 resources:
 

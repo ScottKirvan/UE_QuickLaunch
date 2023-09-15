@@ -57,15 +57,15 @@
     <!-- Template files -->
     <ComponentGroup Id="TemplateComponents" Directory="INSTALLFOLDER">
       <Component Id="TemplateUproject" Guid="4638e36d-e6ed-420f-bc31-55bcf6f5d048" Directory="UEQLTemplateFolder" >
-        <File Source="eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
+        <File Source="ue_quicklaunch_template\ue_quicklaunch_template.uproject" />
       </Component>
 
       <Component Id="TemplateConfig" Guid="0b518f08-3dd6-478b-b876-0eff1be128f9" Directory="UEQLConfigFolder" >
-        <File Source="eu_quicklaunch_template\Config\DefaultEngine.ini" />
+        <File Source="ue_quicklaunch_template\Config\DefaultEngine.ini" />
       </Component>
 
       <Component Id="TemplateReadMe" Guid="ed066087-1eca-43ce-bc02-b917ce502cbe" Directory="UEQLConfigFolder" >
-        <File Source="eu_quicklaunch_template\Config\README.md" />
+        <File Source="ue_quicklaunch_template\Config\README.md" />
       </Component>
     </ComponentGroup>
 
