@@ -31,13 +31,11 @@
     </Feature>
 
     <Feature Id="Optional" Title="Optional Components" Display="expand" Level="1">
-    <!--
       <Feature Id="Template" Title="UE5 Template" Level="1" 
               Description="Installs a default UE5 project template.  Without this UE_QuickLaunch will launch Unreal Engine using a minimal, UE4 compatible uproject file."
               >
         <ComponentGroupRef Id="TemplateComponents" />
       </Feature>
-    -->
 
       <Feature Id="ClassicRCMenu" Title="&quot;Classic&quot; Win 10 Right-Click Menu" Level="1000" 
               Description="SYSTEM RESTART REQUIRED.  Reverts the Windows 11 File Explorer right-click menu to the &quot;Classic&quot; Win 10 style. Less clicks to launch Unreal Engine."
