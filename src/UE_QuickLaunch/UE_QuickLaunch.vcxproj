@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="contents\ue_quicklaunch_template\Config\DefaultEngine.ini" />
+    <None Include="contents\ue_quicklaunch_template\Config\README.md" />
     <None Include="contents\ue_quicklaunch_template\ue_quicklaunch_template.uproject" />
     <None Include="contents\ue-quicklaunch.bat" />
   </ItemGroup>
