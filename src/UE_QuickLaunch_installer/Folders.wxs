@@ -1,14 +1,16 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
   <Fragment>
     <StandardDirectory Id="ProgramFiles6432Folder">
-      <Directory Id="INSTALLFOLDER" Name="!(bind.Property.Manufacturer)" >
-        <!-- Example Template folders -->
+      <Directory Id="INSTALLFOLDER" Name="!(bind.Property.ProductName)" >
+        <!-- Example Template folder -->
         <Directory Id="UEQLTemplateFolder" Name="ue_quicklaunch_template" >
         </Directory>
         <Directory Id="UEQLConfigFolder" Name="ue_quicklaunch_template\Config" >
         </Directory>
+        <!--
         <Directory Id="ProductFolder" Name="UE_QuickLaunch">
         </Directory>
+        -->
       </Directory>
     </StandardDirectory>
   </Fragment>

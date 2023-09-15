@@ -139,8 +139,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="contents\eu_quicklaunch_template\Config\DefaultEngine.ini" />
-    <None Include="contents\eu_quicklaunch_template\eu_quicklaunch_template.uproject" />
+    <None Include="contents\ue_quicklaunch_template\Config\DefaultEngine.ini" />
+    <None Include="contents\ue_quicklaunch_template\ue_quicklaunch_template.uproject" />
     <None Include="contents\ue-quicklaunch.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
