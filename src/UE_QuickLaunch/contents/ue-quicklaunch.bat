@@ -147,5 +147,5 @@ PAUSE
 
 endLocal
 
-PAUSE
+REM PAUSE
 
