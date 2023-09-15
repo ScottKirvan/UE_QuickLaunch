@@ -34,7 +34,10 @@ The installer, `UE_QuickLaunch_installer.msi`, runs unassisted and builds into t
 - I'm finding I can stub together close-to-working v3 code snippets and use `wix convert` to get a better idea how to format the v4 version.  This is helping, but what a PITA.  Document your fucking code.
 
 
-
+# Generate Logfile for Installer
+```
+msiexec /i UE_QuickLaunch_installer.msi /L*v ".\InstallLog.txt"
+```
 
 
 
