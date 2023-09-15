@@ -70,81 +70,46 @@ echo.projectName is: %projectName%
 echo.mode is: %mode%
 
 REM this works for the clicking inside the folder bit
-if %mode%==IN_FOLDER (
-    REM Check if the "ue_quicklaunch_template" folder exists in sourceDir
-    REM if it exists, copy it to the targetDir
-    if exist "%sourceDir%\ue_quicklaunch_template\" (
-        if not EXIST "%targetDir%\%projectName%.uproject" (
-            echo The "ue_quicklaunch_template" folder exists in "%sourceDir%" - copying files
-            
-            REM Copy the contents of "ue_quicklaunch_template" folder to targetDir recursively
-            REM /E - copy subdirectories, including empty ones.
-            REM /W:0 - specifies a wait time of 0 seconds before retries (to avoid unnecessary delays).
-            REM /R:0 - specifies 0 retry attempts (to avoid retries on failures).
-            REM /XC excludes existing files with the same timestamp, but different file sizes. Robocopy normally overwrites those.
-            REM /XN excludes existing files newer than the copy in the destination directory. Robocopy normally overwrites those.
-            REM /XO excludes existing files older than the copy in the destination directory. Robocopy normally overwrites those.
-            echo robocopy "%sourceDir%\ue_quicklaunch_template\\" "%targetDir%\\" /E /XN /XC /XO /W:0 /R:0 /NDL /NFL
-            robocopy "%sourceDir%\ue_quicklaunch_template\\" "%targetDir%\\" /E /XN /XC /XO /W:0 /R:0 /NDL /NFL
+if %mode%==IN_FOLDER goto createProject
+if %mode%==ON_FOLDER goto createProject
+REM ELSE
+goto ERROR
 
-            REM Rename the uproject file
-            echo ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
-            ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
-        )
-    ) else (
-        REM Template folder does not exist, so create the uproject file
-        echo The "ue_quicklaunch_template" folder does not exist in "%sourceDir%"
+:createProject
+REM Check if the "ue_quicklaunch_template" folder exists in sourceDir
+REM if it exists, copy it to the targetDir
+if exist "%sourceDir%\ue_quicklaunch_template\" (
+    if not EXIST "%targetDir%\%projectName%.uproject" (
+        echo The "ue_quicklaunch_template" folder exists in "%sourceDir%" - copying files
+        
+        REM Copy the contents of "ue_quicklaunch_template" folder to targetDir recursively
+        REM /E - copy subdirectories, including empty ones.
+        REM /W:0 - specifies a wait time of 0 seconds before retries (to avoid unnecessary delays).
+        REM /R:0 - specifies 0 retry attempts (to avoid retries on failures).
+        REM /XC excludes existing files with the same timestamp, but different file sizes. Robocopy normally overwrites those.
+        REM /XN excludes existing files newer than the copy in the destination directory. Robocopy normally overwrites those.
+        REM /XO excludes existing files older than the copy in the destination directory. Robocopy normally overwrites those.
+        echo robocopy "%sourceDir%\ue_quicklaunch_template\\" "%targetDir%\\" /E /XN /XC /XO /W:0 /R:0 /NDL /NFL
+        robocopy "%sourceDir%\ue_quicklaunch_template\\" "%targetDir%\\" /E /XN /XC /XO /W:0 /R:0 /NDL /NFL
 
-        if not EXIST "%targetDir%\%projectName%.uproject" (
-            echo Creating new uproject file.
-            echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
-        )
+        REM Rename the uproject file
+        echo ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
+        ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
     )
+) else (
+    REM Template folder does not exist, so create the uproject file
+    echo The "ue_quicklaunch_template" folder does not exist in "%sourceDir%"
 
-    REM echo.Launching: "%projectName%.uproject"
-
-    REM echo start "" "%targetDir%\%projectName%.uproject"
-    REM start "" "%targetDir%\%projectName%.uproject"
+    if not EXIST "%targetDir%\%projectName%.uproject" (
+        echo Creating new uproject file.
+        echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
+    )
 )
 
-REM this is for the click on the folder name version
-REM if there's already a name-matched uproject file in this folder, 
-REM just open it, else, create, then open it.
-if %mode%==ON_FOLDER (
-    REM Check if the "ue_quicklaunch_template" folder exists in sourceDir
-    REM if it exists, copy it to the targetDir
-    if exist "%sourceDir%\ue_quicklaunch_template\" (
-        if not EXIST "%targetDir%\%projectName%.uproject" (
-            echo The "ue_quicklaunch_template" folder exists in "%sourceDir%" - copying files
-            
-            REM Copy the contents of "ue_quicklaunch_template" folder to targetDir recursively
-            REM /E - copy subdirectories, including empty ones.
-            REM /W:0 - specifies a wait time of 0 seconds before retries (to avoid unnecessary delays).
-            REM /R:0 - specifies 0 retry attempts (to avoid retries on failures).
-            REM /XC excludes existing files with the same timestamp, but different file sizes. Robocopy normally overwrites those.
-            REM /XN excludes existing files newer than the copy in the destination directory. Robocopy normally overwrites those.
-            REM /XO excludes existing files older than the copy in the destination directory. Robocopy normally overwrites those.
-            echo robocopy "%sourceDir%\ue_quicklaunch_template\\" "%targetDir%\\" /E /XN /XC /XO /W:0 /R:0 /NDL /NFL
-            robocopy "%sourceDir%\ue_quicklaunch_template\\" "%targetDir%\\" /E /XN /XC /XO /W:0 /R:0 /NDL /NFL
+REM echo.Launching: "%projectName%.uproject"
 
-            REM Rename the uproject file
-            echo ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
-            ren "%targetDir%\ue_quicklaunch_template.uproject" "%projectName%.uproject"
-        )
-
-    ) else (
-        REM Template folder does not exist, so create the uproject file
-        echo The "ue_quicklaunch_template" folder does not exist in "%sourceDir%"
-
-        if not EXIST "%targetDir%\%projectName%.uproject" (
-            echo Creating new uproject file.
-            echo { "FileVersion": 3 } > "%targetDir%\%projectName%.uproject"
-        )
-    )
-    REM echo.Launching "%targetDir%\%projectName%.uproject"
-    REM start "" "%targetDir%\%projectName%.uproject"
-)
-
+REM echo start "" "%targetDir%\%projectName%.uproject"
+REM start "" "%targetDir%\%projectName%.uproject"
 
 echo start "" "%targetDir%\%projectName%.uproject"
 start "" "%targetDir%\%projectName%.uproject"
