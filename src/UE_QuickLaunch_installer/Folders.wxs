@@ -3,10 +3,15 @@
     <StandardDirectory Id="ProgramFiles6432Folder">
       <Directory Id="INSTALLFOLDER" Name="!(bind.Property.ProductName)" >
         <!-- Example Template folder -->
-        <Directory Id="UEQLTemplateFolder" Name="ue_quicklaunch_template" >
+        <Directory Id="UEQLBaseFolder" Name="UE_QuickLaunch" >
+          <Directory Id="UEQLTemplateFolder" Name="ue_quicklaunch_template" >
+            <Directory Id="UEQLConfigFolder" Name="Config" >
+            </Directory>
+            <Directory Id="UEQLContentFolder" Name="Content" >
+            </Directory>
+          </Directory>
         </Directory>
-        <Directory Id="UEQLConfigFolder" Name="ue_quicklaunch_template\Config" >
-        </Directory>
+
       </Directory>
     </StandardDirectory>
   </Fragment>
