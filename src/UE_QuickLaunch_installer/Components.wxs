@@ -1,14 +1,14 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
   <Fragment>
     <!-- Core Components -->
-    <ComponentGroup Id="DefaultComponents" Directory="INSTALLFOLDER">
+    <ComponentGroup Id="DefaultComponents" Directory="UEQLBaseFolder">
 
       <!-- File Components -->
-      <Component Id="ResourceDLL" Guid="50be778e-5086-424a-bf5d-9f1bf2a6c928">
+      <Component Id="ResourceDLL" Guid="50be778e-5086-424a-bf5d-9f1bf2a6c928" Directory="UEQLBaseFolder">
         <File Source="skvfximageres.dll" />
       </Component>
 
-      <Component Id="QuickLaunchBatFile" Guid="920b1a75-8140-4b5f-b94c-2976bdd97df7">
+      <Component Id="QuickLaunchBatFile" Guid="920b1a75-8140-4b5f-b94c-2976bdd97df7" Directory="UEQLBaseFolder">
         <File Source="ue-quicklaunch.bat" />
       </Component>
 
@@ -16,32 +16,32 @@
       <Component Id="RegistryComponent_clickInFolder" Guid="AB8C4904-52D3-4444-A80D-EDC9968D3EF4">
             <RegistryKey Root="HKCR" Key="Directory\Background\shell\UE_QuickLaunch">
               <RegistryValue Type="string" Value="&amp;QuickLaunch Unreal Engine here" /> 
-              <RegistryValue Type="string" Name="Icon" Value="[INSTALLFOLDER]skvfximageres.dll,0" />
+              <RegistryValue Type="string" Name="Icon" Value="[UEQLBaseFolder]skvfximageres.dll,0" />
             </RegistryKey>
       </Component>
 
       <Component Id="RegistryComponent_clickInFolderCommand" Guid="30204b8d-5a9b-4642-9109-9b675518560f">
             <RegistryKey Root="HKCR" Key="Directory\Background\shell\UE_QuickLaunch\command">
-              <RegistryValue Type="string" Value="[INSTALLFOLDER]ue-quicklaunch.bat &quot;%V&quot; IN_FOLDER" />
+              <RegistryValue Type="string" Value="[UEQLBaseFolder]ue-quicklaunch.bat &quot;%V&quot; IN_FOLDER" />
             </RegistryKey>
       </Component>
       
       <Component Id="RegistryComponent_clickOnFolder" Guid="84db9fb1-97b8-4640-89ab-a0352f709362">
             <RegistryKey Root="HKCR" Key="Directory\shell\UE_QuickLaunch">
               <RegistryValue Type="string" Value="&amp;QuickLaunch Unreal Engine here" /> 
-              <RegistryValue Type="string" Name="Icon" Value="[INSTALLFOLDER]skvfximageres.dll,0" />
+              <RegistryValue Type="string" Name="Icon" Value="[UEQLBaseFolder]skvfximageres.dll,0" />
             </RegistryKey>
       </Component>
 
       <Component Id="RegistryComponent_clickOnFolderCommand" Guid="5afe7d7a-0f6d-449f-9af4-2fa852467d1e">
             <RegistryKey Root="HKCR" Key="Directory\shell\UE_QuickLaunch\command">
-              <RegistryValue Type="string" Value="[INSTALLFOLDER]ue-quicklaunch.bat &quot;%V&quot; ON_FOLDER" />
+              <RegistryValue Type="string" Value="[UEQLBaseFolder]ue-quicklaunch.bat &quot;%V&quot; ON_FOLDER" />
             </RegistryKey>
       </Component>
 
       <!-- Docs Shortcut Component -->
       <Component Id="WebsiteShortcutComponent" Guid="acf081aa-d0bb-4692-a4c4-1c0a49a32c3c">
-        <Shortcut Directory="INSTALLFOLDER" Id="WebShortcut" Name="QuickLaunch Documentation" Description="QuickLaunch Documentation: https://github.com/ScottKirvan/UE_QuickLaunch" Target="[URL]" Icon="IconDesktop">
+        <Shortcut Directory="UEQLBaseFolder" Id="WebShortcut" Name="QuickLaunch Documentation" Description="QuickLaunch Documentation: https://github.com/ScottKirvan/UE_QuickLaunch" Target="[URL]" Icon="IconDesktop">
           <Icon Id="IconDesktop" SourceFile="skvfximageres.dll" />
         </Shortcut>      
         <RegistryValue Root="HKMU" 
@@ -55,22 +55,31 @@
     </ComponentGroup>
 
     <!-- Template files -->
-    <ComponentGroup Id="TemplateComponents" Directory="INSTALLFOLDER">
+    <ComponentGroup Id="TemplateComponents" Directory="UEQLBaseFolder">
       <Component Id="TemplateUproject" Guid="4638e36d-e6ed-420f-bc31-55bcf6f5d048" Directory="UEQLTemplateFolder" >
         <File Source="ue_quicklaunch_template\ue_quicklaunch_template.uproject" />
       </Component>
 
-      <Component Id="TemplateConfig" Guid="0b518f08-3dd6-478b-b876-0eff1be128f9" Directory="UEQLConfigFolder" >
+      <Component Id="TemplateConfigEngine" Guid="0b518f08-3dd6-478b-b876-0eff1be128f9" Directory="UEQLConfigFolder" >
         <File Source="ue_quicklaunch_template\Config\DefaultEngine.ini" />
+      </Component>
+
+      <Component Id="TemplateConfigInput" Guid="dc1f85b7-f404-4e20-a5d7-b64540617fc5" Directory="UEQLConfigFolder" >
+        <File Source="ue_quicklaunch_template\Config\DefaultInput.ini" />
       </Component>
 
       <Component Id="TemplateReadMe" Guid="ed066087-1eca-43ce-bc02-b917ce502cbe" Directory="UEQLConfigFolder" >
         <File Source="ue_quicklaunch_template\Config\README.md" />
       </Component>
+
+      <Component Id="TemplateMainMap" Guid="8019e2c6-cbd1-493e-955d-43129cd55be2" Directory="UEQLContentFolder" >
+        <File Source="ue_quicklaunch_template\Content\Main.umap" />
+      </Component>
+
     </ComponentGroup>
 
     <!-- Classic RC Menu -->
-    <ComponentGroup Id="ClassicRCComponents" Directory="INSTALLFOLDER">
+    <ComponentGroup Id="ClassicRCComponents" Directory="UEQLBaseFolder">
       <Component Id="RegistryComponent_ClassicRCMenu" Guid="ff584590-8c0a-4083-a239-a4e2d8093f8d">
             <RegistryKey Root="HKCU" Key="Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32">
               <RegistryValue Type="string" Value="" />

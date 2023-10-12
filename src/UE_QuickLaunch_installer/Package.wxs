@@ -1,6 +1,6 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
      xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
-  <Package Name="UE_QuickLaunch" Manufacturer="SKVFX" Version="2.1.0.0" UpgradeCode="5841e624-2d30-4a43-9d17-ac613df29903">
+  <Package Name="UE_QuickLaunch" Manufacturer="SKVFX" Version="2.1.1.0" UpgradeCode="5841e624-2d30-4a43-9d17-ac613df29903">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
     <Property Id="URL" Value="https://github.com/ScottKirvan/UE_QuickLaunch" />
@@ -12,7 +12,7 @@
           Id="OpenGitHubDocs" 
           Return="ignore" 
           Impersonate="no" 
-          Directory="INSTALLFOLDER"
+          Directory="UEQLBaseFolder"
           ExeCommand="cmd.exe /c ue-quicklaunch.bat stub OPEN_DOCS"
           />
 
