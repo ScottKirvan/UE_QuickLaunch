@@ -7,6 +7,13 @@ adheres to  [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [Unreleased]
 ============
 
+[2.1.2] - 2024-11 - 30
+------------
+### Fixed
+- Touch Interface was enabled by default in the UE template project - this patch turns that back off - srry :-)
+- sets r.Substrate.BytesPerPixel=128 in the template project - this fixes clearcoats in substrate (this is normally broken in 
+  UE's default projects too - this just sets it up to work by default.)
+
 [2.1.0] - 
 ------------
 ### Added
