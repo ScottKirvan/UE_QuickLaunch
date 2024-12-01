@@ -7,7 +7,7 @@ adheres to  [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [Unreleased]
 ============
 
-[2.1.2] - 2024-11 - 30
+[2.1.2] - 2024-11-30
 ------------
 ### Fixed
 - Touch Interface was enabled by default in the UE template project - this patch turns that back off - srry :-)
