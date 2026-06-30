@@ -3,5 +3,9 @@
   "release-type": "simple",
   "include-component-in-tag": false,
   "changelog-path": "notes/CHANGELOG.md",
-  "bootstrap-sha": "e1f22673d2945ad84a04daa5153b6bd7eb9093ac"
+  "packages": {
+    ".": {
+      "bootstrap-sha": "e1f22673d2945ad84a04daa5153b6bd7eb9093ac"
+    }
+  }
 }
