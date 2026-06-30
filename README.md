@@ -146,7 +146,7 @@ I've written up a short document outlining the registry changes [here](notes/Reg
 I'd love it if you'd contribute - or just reach out and say, "hi"!  Here's how:
 - Please [file an issue](https://github.com/skvfx/UE_QuickLaunch/issues), or grab a fork, hack away, and create some [pull requests](https://github.com/ScottKirvan/UE_QuickLaunch/pulls).
 - Contact me on [LinkedIn](https://www.linkedin.com/in/scottkirvan/)
-- You can also reach me on my [discord](https://discord.gg/TSKHvVFYxB) server, I'm @cptvideo.
+- You can also reach me on my [discord](https://discord.gg/TN6XJSNK5Y) server, I'm @cptvideo.
 ## Credits
 **Copyright (c) (2023):** [Scott Kirvan](https://github.com/ScottKirvan)  - All rights reserved   
 *UE_QuickLaunch is licensed under the [MIT License](LICENSE.md).*  
