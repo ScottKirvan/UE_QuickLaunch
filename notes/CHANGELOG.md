@@ -1,3 +1,21 @@
+# Changelog
+
+## [2.2.0](https://github.com/ScottKirvan/UE_QuickLaunch/compare/v2.1.2...v2.2.0) (2026-06-30)
+
+
+### Features
+
+* add release-please, docs workflow, and VitePress stub ([e1f2267](https://github.com/ScottKirvan/UE_QuickLaunch/commit/e1f22673d2945ad84a04daa5153b6bd7eb9093ac))
+
+
+### Bug Fixes
+
+* add bootstrap-sha to release-please config ([be03b2a](https://github.com/ScottKirvan/UE_QuickLaunch/commit/be03b2a77e813ffb8a85d508ba55bc6407d2204b))
+* convert release-please config to packages structure ([ad351ff](https://github.com/ScottKirvan/UE_QuickLaunch/commit/ad351ff0b72d69cc86f1ad674bbc8f302bfbcb83))
+* force a release ([fc8397c](https://github.com/ScottKirvan/UE_QuickLaunch/commit/fc8397cdb13ea8a2931f888351da993252f9b9cf))
+* force new build ([08001a5](https://github.com/ScottKirvan/UE_QuickLaunch/commit/08001a5932df40ccabe691591483ec27a4cded0e))
+* update Discord invite URL to correct server link ([bf96b57](https://github.com/ScottKirvan/UE_QuickLaunch/commit/bf96b5733d75642a95f4ac3c524dc4fde1fc6662))
+
 Changelog
 =========
 All notable changes to this project will be documented in this file.
