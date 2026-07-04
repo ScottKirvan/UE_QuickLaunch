@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/ScottKirvan/UE_QuickLaunch/compare/v2.2.0...v2.2.1) (2026-07-04)
+
+
+### Bug Fixes
+
+* add update-changelog-prs job to release workflow ([260ec03](https://github.com/ScottKirvan/UE_QuickLaunch/commit/260ec038c78e8dd60cc866ba390b63bc3f514d8d))
+
 ## [2.2.0](https://github.com/ScottKirvan/UE_QuickLaunch/compare/v2.1.2...v2.2.0) (2026-06-30)
 
 
