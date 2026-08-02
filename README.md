@@ -27,7 +27,7 @@
   <a href="https://github.com/skvfx/UE_QuickLaunch/blob/master/LICENSE.md">
     <img src="https://img.shields.io/github/license/skvfx/UE_QuickLaunch.svg" alt="license" />
   </a>
-  <a href="https://discord.gg/qwru5MY8jk">
+  <a href="https://discord.gg/TN6XJSNK5Y">
     <img src="https://img.shields.io/discord/1052011377415438346?style=flat-square&label=discord&color=00ACD7">
   </a>
 </p>
