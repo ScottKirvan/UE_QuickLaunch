@@ -1,4 +1,4 @@
-# UE_QuickLaunch [![starline](https://starlines.qoo.monster/assets/skvfx/UE_QuickLaunch)](https://github.com/qoomon/starline)
+# UE_QuickLaunch [![starline](https://raw.githubusercontent.com/ScottKirvan/UE_QuickLaunch/refs/heads/starlines/ScottKirvan/UE_QuickLaunch/starline.svg)](https://github.com/qoomon/starlines)
 <div align="center">
 
 
