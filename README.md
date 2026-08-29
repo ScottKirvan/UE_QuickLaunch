@@ -150,7 +150,7 @@ I'd love it if you'd contribute - or just reach out and say, "hi"!  Here's how:
 - Contact me on [LinkedIn](https://www.linkedin.com/in/scottkirvan/)
 - You can also reach me on my [discord](https://discord.gg/TN6XJSNK5Y) server, I'm @cptvideo.
 ## Credits
-**Copyright (c) (2023):** [Scott Kirvan](https://github.com/ScottKirvan)  - All rights reserved   
+**Copyright (c) 2023:** [Scott Kirvan](https://github.com/ScottKirvan)
 *UE_QuickLaunch is licensed under the [MIT License](LICENSE.md).*  
 
 sk
