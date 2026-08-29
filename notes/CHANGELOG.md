@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.3.0](https://github.com/ScottKirvan/UE_QuickLaunch/compare/v2.2.1...v2.3.0) (2026-08-29)
+
+
+### Features
+
+* add pre-release staging workflow, update release pipeline ([f7c8af7](https://github.com/ScottKirvan/UE_QuickLaunch/commit/f7c8af77a2209af4a2db3d6bcae6860037afbd97))
+
+
+### Bug Fixes
+
+* add changelog link to release and staging footers ([86c8f38](https://github.com/ScottKirvan/UE_QuickLaunch/commit/86c8f3899370258415e028bc03e98add5619ee66))
+* correct Discord invite link in README ([3383ff7](https://github.com/ScottKirvan/UE_QuickLaunch/commit/3383ff7313251b6e901e8cf1fecc2200e3b908b9))
+* drop redundant 'All rights reserved' from credits ([9b80776](https://github.com/ScottKirvan/UE_QuickLaunch/commit/9b8077686534aae685c89ff35e27d7dcafbfcb25))
+* migrate starline badge to self-hosted GitHub Action ([799a1fe](https://github.com/ScottKirvan/UE_QuickLaunch/commit/799a1fe037f882dc4be476a90d42d735a1a6f549))
+* move link banner to header, add Ko-Fi, update context, add preview workflow ([5221eea](https://github.com/ScottKirvan/UE_QuickLaunch/commit/5221eea508ebb24097a9a0b798ebba83018b18dc))
+
 ## [2.2.1](https://github.com/ScottKirvan/UE_QuickLaunch/compare/v2.2.0...v2.2.1) (2026-07-04)
 
 ### Pull Requests
