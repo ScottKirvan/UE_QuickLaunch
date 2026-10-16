@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.1](https://github.com/ScottKirvan/UE_QuickLaunch/compare/v2.3.0...v2.3.1) (2026-10-16)
+
+
+### Bug Fixes
+
+* add VitePress local search provider to docs ([96aeb99](https://github.com/ScottKirvan/UE_QuickLaunch/commit/96aeb9987d48ffe6e1ae9c0fa3bbdd20e42b4179))
+* remove leading comma from v2.3.0 Includes PRs line ([b18de3e](https://github.com/ScottKirvan/UE_QuickLaunch/commit/b18de3e1e7691b8b412c703a7afa2e7e695e49d5))
+
 ## [2.3.0](https://github.com/ScottKirvan/UE_QuickLaunch/compare/v2.2.1...v2.3.0) (2026-08-29)
 
 
